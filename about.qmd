@@ -3,7 +3,7 @@ title: "About"
 about:
   id: hero-heading
   template: jolla
-  image: jason.JPG
+  image: jason.png
   links:
     - icon: linkedin
       text: LinkedIn
@@ -15,12 +15,10 @@ about:
 
 ### This content appears above the formatted about page content.
 
-:::{#hero-heading}
-
 Hello everyone! I'm Jason, a Sophomore in the College of Arts and Science, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
 
 ## Education
 
 University of Pennsylvania | Philadelphia, PA
-Candidate for Bachelor of Arts in Cognitive Science | Sept 2011 - June 2015
+Candidate for Bachelor of Arts in Cognitive Science | Aug 2022 - Current
 
