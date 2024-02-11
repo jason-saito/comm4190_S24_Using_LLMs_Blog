@@ -1,8 +1,26 @@
 ---
-title: About
-image: profile.jpg
+title: "About"
 about:
+  id: hero-heading
   template: jolla
+  image: jason.JPG
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/jason-saito/
+    - icon: github
+      text: Github
+      href: https://github.com/jasonsaito22
 ---
 
-About this blog
+### This content appears above the formatted about page content.
+
+:::{#hero-heading}
+
+Hello everyone! I'm Jason, a Sophomore in the College of Arts and Science, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
+
+## Education
+
+University of Pennsylvania | Philadelphia, PA
+Candidate for Bachelor of Arts in Cognitive Science | Sept 2011 - June 2015
+
