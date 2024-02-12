@@ -13,7 +13,7 @@ about:
       href: https://github.com/jasonsaito22
 ---
 
-### This content appears above the formatted about page content.
+### Welcome!
 
 Hello everyone! I'm Jason, a Sophomore in the College of Arts and Science, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
 
