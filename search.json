@@ -32,7 +32,7 @@
     "href": "index.html",
     "title": "My Explorations with LLMs",
     "section": "",
-    "text": "Using ChatGPT to Create Stories\n\n\n\n\n\n\nLLMs\n\n\nDoll-e\n\n\nImage generation\n\n\n\nProducing a book that explains AI and LLMs to children.\n\n\n\n\n\nFeb 13, 2024\n\n\nJason Saito\n\n\n\n\n\n\n\n\n\n\n\n\nTesting Logical Reasoning\n\n\n\n\n\n\nLLMs\n\n\nChatGPT\n\n\nlogic\n\n\n\nInspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.\n\n\n\n\n\nFeb 8, 2024\n\n\nJason Saito\n\n\n\n\n\n\n\n\n\n\n\n\nMaking Products with ChatGPT 4.0\n\n\n\n\n\n\nProduct\n\n\nChatGPT\n\n\nLLMss\n\n\n\nHow does ChatGPT create product names and ideas?\n\n\n\n\n\nFeb 6, 2024\n\n\nJason Saito\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
+    "text": "Using ChatGPT to Create Stories\n\n\n\n\n\n\nLLMs\n\n\nDALL-E\n\n\nImage generation\n\n\n\nProducing a book that explains AI and LLMs to children.\n\n\n\n\n\nFeb 13, 2024\n\n\nJason Saito\n\n\n\n\n\n\n\n\n\n\n\n\nTesting Logical Reasoning\n\n\n\n\n\n\nLLMs\n\n\nChatGPT\n\n\nlogic\n\n\n\nInspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.\n\n\n\n\n\nFeb 8, 2024\n\n\nJason Saito\n\n\n\n\n\n\n\n\n\n\n\n\nMaking Products with ChatGPT 4.0\n\n\n\n\n\n\nProduct\n\n\nChatGPT\n\n\nLLMss\n\n\n\nHow does ChatGPT create product names and ideas?\n\n\n\n\n\nFeb 6, 2024\n\n\nJason Saito\n\n\n\n\n\n\n\n\n\n\n\n\nA test post\n\n\n\n\n\n\nLLMs\n\n\nprompting\n\n\nlogic\n\n\n\nAn example post from a Jupyter notebook\n\n\n\n\n\nFeb 2, 2024\n\n\nAn LLM User\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/000_test_post/index.html",
@@ -53,6 +53,6 @@
     "href": "posts/003_Book/index.html",
     "title": "Using ChatGPT to Create Stories",
     "section": "",
-    "text": "After reading Chapter 3 of insert title, I wanted to test how well the “explain like you’re talking to a 5-year old prompt really worked.\nI prompted ChatGPT 4 with the prompt, “explain Artificial Intelligence and LLMs to me as if I was 5. provide it to me in the format of a text and images that I can use to make a children’s picture book.” I then combined the text with the images it provided from Doll-E below as a PDF.\n\nClick the preview above to view the full PDF."
+    "text": "After reading Chapter 3 of insert title, I wanted to test how well the “explain like you’re talking to a 5-year old prompt really worked.\nI prompted ChatGPT 4 with the prompt, “explain Artificial Intelligence and LLMs to me as if I was 5. provide it to me in the format of a text and images that I can use to make a children’s picture book.” I then combined the text with the images it provided from DALL-E below as a PDF.\n\nClick the preview above to view the full PDF."
   }
 ]
