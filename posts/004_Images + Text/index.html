@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Jason Saito">
+<meta name="dcterms.date" content="2024-02-15">
+<meta name="description" content="Can AI comment on patterns and count?">
 
-<title>My Explorations with LLMs</title>
+<title>My Explorations with LLMs - Exploring Large Vision-Language Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +26,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,77 +69,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">My Explorations with LLMs</span>
     </a>
   </div>
@@ -149,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item compact">
@@ -172,261 +115,90 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">My Explorations with LLMs</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Exploring Large Vision-Language Models</h1>
+                  <div>
+        <div class="description">
+          Can AI comment on patterns and count?
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">LLava</div>
+                <div class="quarto-category">Vision-Language models</div>
+                <div class="quarto-category">Puzzles</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Jason Saito </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">February 15, 2024</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="ChatGPT">ChatGPT <span class="quarto-category-count">(2)</span></div><div class="category" data-category="DALL-E">DALL-E <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Image generation">Image generation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLMs">LLMs <span class="quarto-category-count">(3)</span></div><div class="category" data-category="LLMss">LLMss <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLava">LLava <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Product">Product <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Puzzles">Puzzles <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Vision-Language models">Vision-Language models <span class="quarto-category-count">(1)</span></div><div class="category" data-category="logic">logic <span class="quarto-category-count">(2)</span></div><div class="category" data-category="prompting">prompting <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<h1>
+Introduction
+</h1>
+<p>I decided to re-explore a concept brought upon in my <a href="https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/">Second Blog Post</a>, where I tested if AI could solve riddles. This blog post will explore how AI interacts with images.</p>
+<h1>
+Returning to the Riddles
+</h1>
+<p>I began by providing the llava-v1.6-24b model the same image from my initial post, prompting it to state the number of matches in the image.</p>
+<p><img src="riddle.jpeg" width="300"></p>
+<p>While the correct answer is 15 matches, the model said that “There are 12 matches in the image.”</p>
+<p>I attempted to correct it by saying, “note that matches in this image are of varying sizes, some are smaller than others, but are still considered matches.” However, it still believed its answer was correct, it said “Thank you for the clarification. In that case, there are 12 matches in total, including the varying sizes.”</p>
+<p>I then attempted to correct it and prompted it with “this is incorrect, please recalculate and provide reasoning for your answer.” However, its response was “I apologize for the mistake. Let’s recalculate the number of matches in the image.</p>
+<p>There are 12 matches in total, including the varying sizes. The image shows a total of 12 matches, with some being smaller than others.”</p>
+<p>In this case, the model failed to recognize the correct number of matches in the image.</p>
+<h1>
+Interpreting Data Visualizations
+</h1>
+<p>I was curious to see how the model interpreted data and provided it a sample pie chart I found from google.</p>
+<p><img src="water.png" width="30%"></p>
+<p>I prompted it with the goal of giving it context about the type of graph and exactly what I wanted to learn about the data. I prompted it with “based on the image provided, interpret the data and describe how water usage is broken down in the pie chart.” I was shocked by its response:</p>
+<p>“The pie chart in the image illustrates the breakdown of water usage in a residential setting. It is divided into six categories, each representing a different source of water consumption. Here’s the breakdown as shown in the chart:</p>
+<p>Shower - 16.8% This category represents the water used for showering, which is the second-largest contributor to residential water usage.</p>
+<p>Toilet - 26.7% The toilet is the largest single source of water usage in a residential setting, accounting for nearly a quarter of the total.</p>
+<p>Faucet - 15.7% Water used at the faucet, likely for activities such as washing hands and brushing teeth, is the third-largest category.</p>
+<p>Clothes Washer - 21.7% The water used for washing clothes in a clothes washer is the fourth-largest category.</p>
+<p>Leaks - 13.7% Water leaks, which can occur in various parts of a home, such as faucets, pipes, or appliances, account for 13.7% of residential water usage.</p>
+<p>Other - 5.3% This category includes all other sources of water usage that do not fit into the other five categories. It is the smallest category on the chart.</p>
+<p>The chart is sourced from the American Water Works Association Research Foundation, and it is based on data from 1999. It provides a visual representation of where most of the water used in a residential home goes, highlighting the importance of water conservation efforts in areas such as toilet and faucet usage.”</p>
+<p>Shockingly, it was able to successfully describe the pie chart, the exact breakdown of the chart, as well as where the image was from. This was a stark contrast from the previous experiment I ran with the matches puzzle.</p>
+<h1>
+Conclusion
+</h1>
+<p>I was overall pleased with the results and felt like the model did a solid job of recognizing the image and interpreting the data. However, I noticed that it struggled to recognize the “matches” when they were different sizes in the first image. In the future, I hope to explore how the model reacts to different types of charts and data.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1708831385203" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/006_Hack Data/index.html" class="no-external"></a></p><a href="./posts/006_Hack Data/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/006_Hack Data/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/006_Hack Data/index.html" class="no-external"></a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/006_Hack Data/index.html" class="no-external"></a>
-</div>
-<div class="listing-description">
-<a href="./posts/006_Hack Data/index.html" class="no-external">use the Open LLM from Stanford</a>
-</div>
-</div>
-<div class="metadata">
-<p><a href="./posts/006_Hack Data/index.html" class="no-external"></a></p><a href="./posts/006_Hack Data/index.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="LLava,Vision-Language models,Puzzles" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1708831385203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
-<div class="thumbnail">
-<p><a href="./posts/004_Images + Text/index.html" class="no-external"></a></p><a href="./posts/004_Images + Text/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/004_Images + Text/riddle.jpeg"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/004_Images + Text/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/004_Images + Text/index.html" class="no-external">Exploring Large Vision-Language Models</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/004_Images + Text/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLava'); return false;">
-LLava
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Vision-Language models'); return false;">
-Vision-Language models
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Puzzles'); return false;">
-Puzzles
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/004_Images + Text/index.html" class="no-external">Can AI comment on patterns and count?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/004_Images + Text/index.html" class="no-external">
-<div class="listing-date">
-Feb 15, 2024
-</div>
-<div class="listing-author">
-Jason Saito
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="LLMs,DALL-E,Image generation" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1708831385203" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
-<div class="thumbnail">
-<p><a href="./posts/003_Book/index.html" class="no-external"></a></p><a href="./posts/003_Book/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/003_Book/1.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/003_Book/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/003_Book/index.html" class="no-external">Using ChatGPT to Create Stories</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/003_Book/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;">
-DALL-E
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Image generation'); return false;">
-Image generation
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/003_Book/index.html" class="no-external">Producing a book that explains AI and LLMs to children.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/003_Book/index.html" class="no-external">
-<div class="listing-date">
-Feb 13, 2024
-</div>
-<div class="listing-author">
-Jason Saito
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="LLMs,ChatGPT,logic" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1708831385087" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
-<div class="thumbnail">
-<p><a href="./posts/002_testing_logic/index.html" class="no-external"></a></p><a href="./posts/002_testing_logic/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/002_testing_logic/matches.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/002_testing_logic/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/002_testing_logic/index.html" class="no-external">Testing Logical Reasoning</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/002_testing_logic/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
-ChatGPT
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('logic'); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/002_testing_logic/index.html" class="no-external">Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/002_testing_logic/index.html" class="no-external">
-<div class="listing-date">
-Feb 8, 2024
-</div>
-<div class="listing-author">
-Jason Saito
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Product,ChatGPT,LLMss" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1708831385087" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
-<div class="thumbnail">
-<p><a href="./posts/001_product/index.html" class="no-external"></a></p><a href="./posts/001_product/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/001_product/index_files/figure-html/e4236ac7-b50e-437d-9007-640656e3d225-1-86920b3b-2c76-45c7-83b3-1aa47e6dda10.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/001_product/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/001_product/index.html" class="no-external">Making Products with ChatGPT 4.0</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/001_product/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('Product'); return false;">
-Product
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
-ChatGPT
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('LLMss'); return false;">
-LLMss
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/001_product/index.html" class="no-external">How does ChatGPT create product names and ideas?</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/001_product/index.html" class="no-external">
-<div class="listing-date">
-Feb 6, 2024
-</div>
-<div class="listing-author">
-Jason Saito
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="LLMs,prompting,logic" data-listing-date-sort="1706832000000" data-listing-file-modified-sort="1708831385059" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="450">
-<div class="thumbnail">
-<p><a href="./posts/000_test_post/index.html" class="no-external"></a></p><a href="./posts/000_test_post/index.html" class="no-external">
-<p class="card-img-top"><img src="posts/000_test_post/gpt3-5.png"  class="thumbnail-image card-img"/></p>
-</a><p><a href="./posts/000_test_post/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/000_test_post/index.html" class="no-external">A test post</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/000_test_post/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('LLMs'); return false;">
-LLMs
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('prompting'); return false;">
-prompting
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('logic'); return false;">
-logic
-</div>
-</div>
-<div class="listing-description">
-<a href="./posts/000_test_post/index.html" class="no-external">An example post from a Jupyter notebook</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./posts/000_test_post/index.html" class="no-external">
-<div class="listing-date">
-Feb 2, 2024
-</div>
-<div class="listing-author">
-An LLM User
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

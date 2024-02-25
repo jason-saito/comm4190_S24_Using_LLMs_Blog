@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/006_Hackathon/Untitled.html</loc>
-    <lastmod>2024-02-24T22:23:18.936Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/index.html</loc>
-    <lastmod>2024-02-24T22:23:18.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/001_product/index.html</loc>
-    <lastmod>2024-02-24T22:23:18.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2024-02-24T22:23:18.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2024-02-24T22:23:18.784Z</lastmod>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/003_Book/index.html</loc>
+    <lastmod>2024-02-25T03:23:05.203Z</lastmod>
   </url>
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2024-02-24T22:23:18.792Z</lastmod>
+    <lastmod>2024-02-25T03:23:05.059Z</lastmod>
   </url>
   <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/003_Book/index.html</loc>
-    <lastmod>2024-02-24T22:23:18.936Z</lastmod>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/001_product/index.html</loc>
+    <lastmod>2024-02-25T03:23:05.087Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
+    <lastmod>2024-02-25T03:23:05.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/about.html</loc>
+    <lastmod>2024-02-25T03:23:05.051Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/006_Hack Data/index.html</loc>
+    <lastmod>2024-02-25T03:23:05.203Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/004_Images + Text/index.html</loc>
+    <lastmod>2024-02-25T03:23:05.203Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/index.html</loc>
+    <lastmod>2024-02-25T03:23:05.087Z</lastmod>
   </url>
 </urlset>
