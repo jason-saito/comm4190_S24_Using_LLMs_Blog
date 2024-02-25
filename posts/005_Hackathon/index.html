@@ -172,17 +172,17 @@ Data Visualizations
 <p>Our first goal was to provide Data Visualizations to provide coaches with a clear way to examine their team’s strengths and weaknesses. We stumbled upon the <a href="https://www.storytellingwithdata.com/blog/2021/8/31/what-is-a-spider-chart">Spider Chart</a> through a <a href="https://www.tiktok.com/t/ZT8wujuuB/">Tik Tok video</a> that we felt clearly showed patterns in playstyle like we hoped for, and decided to use it in our scouting reports.</p>
 <p>After deciding our approach, we found a NBA dataset on <a href="https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats/data">Kaggle</a> to use for our data visualizations. We used plotly to provide interactive graphs that allowed users to compare players and teams from either a single year, range of years, or all years.</p>
 <p>Here is an example player comparison, comparing players from two different eras.</p>
-<p><img src="Player.png"></p>
+<p><img src="Player.png" width="80%"></p>
 <p>Or teams from two different eras.</p>
-<p><img src="teams.png"></p>
+<p><img src="teams.png" width="80%"></p>
 <p>And current teams.</p>
-<p><img src="76ers.png"></p>
+<p><img src="76ers.png" width="80%"></p>
 <h1>
 Retrieval-augmented generation (RAG)
 </h1>
 <p>In order to provide the scouting reports, we used <a href="">RAG</a>. A <a href="">blog post</a> will follow about how we used RAG, but, overall, we fed the model exampels of NBA scouting reports, NBA articles, and player data in order for it to present the most accuate findings in a scouting report structure.</p>
 <p>Overall, we were pleased with the results, however noticed inconsitencies in the responses where the model often referenced players that were no longer on the team, despite prompting it to analyze a team from a specific year. I believe this could be due to the use of older articles in either its training data or the articles we were providing it. In the future, I’d like to look into feeding the model data in the form of CSVs and providing it articles from ESPN written in only this year.</p>
-<p>Here is an example scouting report output: <img src="scouting.png"></p>
+<p>Here is an example scouting report output: <img src="scouting.png" width="80%"></p>
 <h1>
 The Interface
 </h1>
