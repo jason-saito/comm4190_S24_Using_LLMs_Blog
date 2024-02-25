@@ -10,7 +10,7 @@ about:
       href: https://www.linkedin.com/in/jason-saito/
     - icon: github
       text: Github
-      href: https://github.com/jasonsaito22
+      href: https://github.com/jason-sait
 ---
 
 ### Welcome!
@@ -20,5 +20,5 @@ Hello everyone! I'm Jason, a Sophomore in the College of Arts and Science, study
 ## Education
 
 University of Pennsylvania | Philadelphia, PA
-Candidate for Bachelor of Arts in Cognitive Science | Aug 2022 - Current
+Candidate for Bachelor of Arts in Cognitive Science
 
