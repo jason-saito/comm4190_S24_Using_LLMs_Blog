@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jason Saito">
-<meta name="dcterms.date" content="2024-03-07">
+<meta name="dcterms.date" content="2024-03-21">
 <meta name="description" content="Exploring RAG">
 
-<title>My Explorations with LLMs - Introduction to Retreival Augmented Generation</title>
+<title>My Explorations with LLMs - Different Types of Learning</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Introduction to Retreival Augmented Generation</h1>
+      <h1 class="title">Different Types of Learning</h1>
                   <div>
         <div class="description">
           Exploring RAG
@@ -142,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 7, 2024</p>
+        <p class="date">March 21, 2024</p>
       </div>
     </div>
     
@@ -161,31 +161,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<h1>
-What is Retreival Augmented Generation?
-</h1>
-<p>Retrieval Augmented Generation can be broken down into 3 different steps.</p>
-<p>The term retrieval comes from the idea that the user asks a question, and the chatbot searches and finds the most similar data from the data that you provided it.</p>
-<p>The augmentation occurs when the prompt and additional context from the data are used to change the “prompt template.”</p>
-<p>The generation ultimately occurs when the response is provided back.</p>
-<h1>
-Why Use It?
-</h1>
-<p>There are three main issues with LLMs in general. First, there is a lack of domain/internal knowledge that you might have since models are trained on publicly available data. This means that models can’t answer questions about your business or any other more-personalized tasks that you might want to explore.</p>
-<p>Second, LLMs often hallucinate. Although LLMs can seem very confident in their response, they can provide incorrect answers to your questions.</p>
-<p>Third, the training cut off. In all models, there is a date cut off in data that the model was trained with. This means if you want to ask questions about current information, you won’t get a correct response since the model is unaware of this data.</p>
-<p>RAG aims to solve these issues by allowing you to embed new/more-specified data to achieve more personalized results.</p>
-<p><img src="rag.png"></p>
-<h1>
-Examples of How RAG is Used
-</h1>
-<h3 class="anchored">
-Sources
-</h3>
-<ul>
-<li>https://www.databricks.com/glossary/retrieval-augmented-generation-rag</li>
-<li>https://www.youtube.com/watch?v=2l1IPCfyDjY</li>
-</ul>
 
 
 

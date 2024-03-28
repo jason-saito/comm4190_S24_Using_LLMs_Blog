@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Jason Saito">
-<meta name="dcterms.date" content="2024-03-07">
-<meta name="description" content="Exploring RAG">
+<meta name="dcterms.date" content="2024-02-27">
+<meta name="description" content="Exploring various tools and history of AI-generated Music">
 
-<title>My Explorations with LLMs - Introduction to Retreival Augmented Generation</title>
+<title>My Explorations with LLMs - Exploring AI-Generated Music</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,15 +116,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Introduction to Retreival Augmented Generation</h1>
+      <h1 class="title">Exploring AI-Generated Music</h1>
                   <div>
         <div class="description">
-          Exploring RAG
+          Exploring various tools and history of AI-generated Music
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">RAG</div>
-                <div class="quarto-category">Langchain</div>
+                <div class="quarto-category">Music</div>
+                <div class="quarto-category">Media</div>
+                <div class="quarto-category">Generative AI</div>
               </div>
                   </div>
   </div>
@@ -142,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 7, 2024</p>
+        <p class="date">February 27, 2024</p>
       </div>
     </div>
     
@@ -162,30 +163,36 @@ ul.task-list li input[type="checkbox"] {
 
 
 <h1>
-What is Retreival Augmented Generation?
+Introduction to AI Music
 </h1>
-<p>Retrieval Augmented Generation can be broken down into 3 different steps.</p>
-<p>The term retrieval comes from the idea that the user asks a question, and the chatbot searches and finds the most similar data from the data that you provided it.</p>
-<p>The augmentation occurs when the prompt and additional context from the data are used to change the “prompt template.”</p>
-<p>The generation ultimately occurs when the response is provided back.</p>
+<p>My first exposure to the world of AI-Generated music came around a year ago when I watched this video.<br></p>
+<p>Being a fan of both Drake and the Weeknd, it was shocking to me how real they sounded in the video. At first, I thought it was a real song but after reading that it was AI generated I was blown away.</p>
+<p><img src="ghost.jpeg"><br> <a href="https://x.com/imghostwrit3r/status/1647623877214732290?s=20">Watch the video here!</a></p>
 <h1>
-Why Use It?
+Experimenting with AI Music
 </h1>
-<p>There are three main issues with LLMs in general. First, there is a lack of domain/internal knowledge that you might have since models are trained on publicly available data. This means that models can’t answer questions about your business or any other more-personalized tasks that you might want to explore.</p>
-<p>Second, LLMs often hallucinate. Although LLMs can seem very confident in their response, they can provide incorrect answers to your questions.</p>
-<p>Third, the training cut off. In all models, there is a date cut off in data that the model was trained with. This means if you want to ask questions about current information, you won’t get a correct response since the model is unaware of this data.</p>
-<p>RAG aims to solve these issues by allowing you to embed new/more-specified data to achieve more personalized results.</p>
-<p><img src="rag.png"></p>
+<p>One of the first tools I stumbled upon is <a href="https://www.suno.ai/">Suno AI</a>. Immediately you’re greated with examples of AI-generated songs. One of my favorites is titled “Make a song about the moon.”</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/d7f028cf-df36-43bd-87f3-8d1b8b9570e0-2-db2d165c-5ee6-47f1-8886-b412b862eae0.png" class="img-fluid figure-img"></p>
+<figcaption>Suno AI</figcaption>
+</figure>
+</div>
+<p>After seeing a preview of the tool, I decieded to make my own song. I used Gemini to make an R&amp;B song. <img src="index_files/figure-html/d7f028cf-df36-43bd-87f3-8d1b8b9570e0-1-d9e9e104-4a98-47df-b2e4-7f7e7de104ba.png" class="img-fluid" alt="image.png"></p>
+<p>I present,</p>
+<p><img src="index_files/figure-html/66f5ef55-fd12-4b80-952b-1865fa7cc263-1-48c12b61-9dd8-49a2-ab26-0ea0cf645fb9.png" class="img-fluid" alt="Midnight Serenade"><br> <a href="https://app.suno.ai/song/f5ce6fc3-a87c-4e5d-8ffe-2849d454348d">“Midnight Serenade.”</a></p>
+<p>I decided to test out Suno AI’s custom feature where you can give it a genre and lyrics and it will generate the music. I asked Gemini to generate song lyrics for a Dark R&amp;B song similar to R&amp;B artists Giveon, Brent Faiyaz, and Bryson Tiller.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/346487fa-4a5e-44ee-ba38-79730e5444e3-1-b214bf11-5eaa-462a-8bfe-d4bb8720bc22.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>Here is <a href="https://app.suno.ai/song/f3466904-9006-4fc2-918f-8c5c5d86156e">“Playing with Fire”</a></p>
 <h1>
-Examples of How RAG is Used
+Conclusion
 </h1>
-<h3 class="anchored">
-Sources
-</h3>
-<ul>
-<li>https://www.databricks.com/glossary/retrieval-augmented-generation-rag</li>
-<li>https://www.youtube.com/watch?v=2l1IPCfyDjY</li>
-</ul>
+<p>Overall, I’m really happy with the result. Even though there are some instances where you can tell that the music is AI-generated, I find it fascinating how accurate and human-like the AI sounds overall. It’s also really impressive to me how the AI can make lyrics on its own based on the genre I tell it. In a future blog post I hope to learn more about how the AI can achieve this and sound like a human while singing.</p>
 
 
 

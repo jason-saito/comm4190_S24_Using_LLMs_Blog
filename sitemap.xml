@@ -2,42 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.790Z</lastmod>
+    <lastmod>2024-03-28T15:34:41.018Z</lastmod>
   </url>
   <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.798Z</lastmod>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/009_GPT4All/Untitled.html</loc>
+    <lastmod>2024-03-28T15:34:41.190Z</lastmod>
   </url>
   <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/005_Hackathon/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/006_NBA Data/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.958Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/001_product/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.822Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/004_Images + Text/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.938Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/010_RAG/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.958Z</lastmod>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/012_ML + PAC/Untitled.html</loc>
+    <lastmod>2024-03-28T15:34:41.194Z</lastmod>
   </url>
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/003_Book/index.html</loc>
-    <lastmod>2024-03-26T17:11:55.938Z</lastmod>
+    <lastmod>2024-03-28T15:34:41.166Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/005_Hackathon/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.170Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/014_Learning/Untitled.html</loc>
+    <lastmod>2024-03-28T15:34:41.194Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/007_Exploring AI Music/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.190Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/001_product/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.050Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/006_NBA Data/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.186Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/013_Clustering + T-sne/Untitled.html</loc>
+    <lastmod>2024-03-28T15:34:41.194Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/004_Images + Text/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.166Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/010_RAG/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.190Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/011_Nomic/Untitled.html</loc>
+    <lastmod>2024-03-28T15:34:41.190Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/000_test_post/index.html</loc>
+    <lastmod>2024-03-28T15:34:41.026Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/008_How Does AI Music Work/Untitled.html</loc>
+    <lastmod>2024-03-28T15:34:41.190Z</lastmod>
   </url>
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/about.html</loc>
-    <lastmod>2024-03-26T17:11:55.790Z</lastmod>
+    <lastmod>2024-03-28T15:34:41.018Z</lastmod>
   </url>
 </urlset>
