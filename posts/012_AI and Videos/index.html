@@ -8,9 +8,9 @@
 
 <meta name="author" content="Jason Saito">
 <meta name="dcterms.date" content="2024-03-21">
-<meta name="description" content="Exploring RAG">
+<meta name="description" content="Exploring Pegasus – Can it analyze basketball highlights?">
 
-<title>My Explorations with LLMs - AI &amp; Video Analysis</title>
+<title>My Explorations with LLMs - LLMs and Basketball Highlight Analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -116,15 +116,16 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">AI &amp; Video Analysis</h1>
+      <h1 class="title">LLMs and Basketball Highlight Analysis</h1>
                   <div>
         <div class="description">
-          Exploring RAG
+          Exploring Pegasus – Can it analyze basketball highlights?
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">RAG</div>
-                <div class="quarto-category">Langchain</div>
+                <div class="quarto-category">Basketball</div>
+                <div class="quarto-category">Pegasus</div>
+                <div class="quarto-category">Twelve Labs</div>
               </div>
                   </div>
   </div>
@@ -161,8 +162,76 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>I was stumbling across YouTube when researching for my final project about the intersections of Sports Analytics and LLMs. I curious to see if there were any Generative AI tools out there that analyzed videos such as sports highlights, game summarys, etc. It turns out there was one tool called <a href="https://www.youtube.com/watch?v=Hrd11Tp72Y0"> “Pegasus” by Twelve Labs. </a></p>
+<p>I decided to check it out further on their <a href="https://www.twelvelabs.io/blog/introducing-pegasus-1"> website </a> and was fascinated about their use of video to text and how it makes its outputs. I decided to test it out myself and made an account.</p>
+<p>Immediately I was pleased to see the tool’s connection to sports, with its “stronger domain knowledge” for sports as well as its main features. <img src="index_files/figure-html/9fe68211-64a6-4d4b-b4a4-a56dd75cd0e5-2-cff928b7-3488-493a-9549-c63ce7f32e09.png" class="img-fluid" alt="image.png"> <img src="index_files/figure-html/9fe68211-64a6-4d4b-b4a4-a56dd75cd0e5-1-3b49e28d-bfc5-43db-a86b-4c85f6150e26.png" class="img-fluid" alt="image.png"></p>
+</section>
+<section id="testing-the-model" class="level1">
+<h1>Testing the Model</h1>
+<p>I wanted to see how well the model really understood sports and decided to provide it one of the most iconic moments in basketball history. Thankfully, the video includes the moment from multiple angles and lots of dialogue, that the model could hopefully pick up on and provide an analysis of.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://www.youtube.com/watch?v=nFQy-qmyotc"><img src="https://img.youtube.com/vi/nFQy-qmyotc/0.jpg" class="img-fluid figure-img" alt="Ray Allen’s Clutch Three"></a></p>
+<figcaption>Ray Allen’s Clutch Three</figcaption>
+</figure>
+</div>
+<p>After providing the YouTube link, it took a few minutes to process it.</p>
+</section>
+<section id="prompting" class="level1">
+<h1>Prompting</h1>
+<p>Once loaded, I prompted the model with the question, “Explain what’s happening in the video. For context, you’re watching a basketball game highlight. Explain the key words in basketball such as”rebound,” “3 pointer,” etc.</p>
+</section>
+<section id="response-1" class="level1">
+<h1>Response #1</h1>
+<p>LeBron’s Layup Tie: Miami Heat vs.&nbsp;San Antonio Spurs’ Intense Fourth Quarter with Ray Allen’s Game-Tying Three-Pointer</p>
+<p>Topic:</p>
+<p>Thrilling Basketball Playoffs Moment: LeBron James’ Game-Tying Layup by Ray Allen’s Historic Three-Point Shot.</p>
+<p>Hashtags</p>
+<p>#basketball #MiamiHeat #SanAntonioSpurs #LeBronJames #playoffgame #NBA #excitement</p>
+<p>Summary</p>
+<p>The video captures an intense moment from a basketball game between the Miami Heat and the San Antonio Spurs. The game is in the fourth quarter with the Heat leading by 3 points and 9 minutes and 11 seconds remaining on the clock. The focus is on the Heat’s LeBron James, number 34, who has the ball. LeBron skillfully maneuvers around a Spurs defender and makes a layup, scoring for the Heat. The crowd erupts in cheers as LeBron completes the basket, and his teammates on the bench join in the celebration. LeBron acknowledges the crowd with a raised fist, expressing triumph. The video showcases the athleticism and skill of the players, as well as the passion and engagement of the fans. Throughout the video, there are references to basketball terms such as rebound, three-pointer, and the history of three-point shooters in the NBA. This basketball game highlight captures the excitement and intensity of the sport.</p>
+</section>
+<section id="thoughts" class="level1">
+<h1>Thoughts</h1>
+<p>This output is not correct. The heat were actually down by 3 points with 9 seconds left to go. Ray Allen took a 3 pointer, not lebron taking a layup.</p>
+<p>I re- attempted with the same prompt but with a lower temperature this time (to 0).</p>
+</section>
+<section id="response-2" class="level1">
+<h1>Response #2</h1>
+<p>Based on the visual information provided, the video is a basketball game highlight between the Miami Heat and the San Antonio Spurs. The footage captures a sequence of plays involving LeBron James (#34) from the Heat team. The game is in the fourth quarter, with the Heat leading by 3 points (89-86) and 9 minutes and 11 seconds remaining on the game clock. In terms of basketball terminology, the video showcases various key words and actions. These include: Rebound: This refers to the act of retrieving the ball after a missed shot. In the video, there are instances where players from both teams attempt to grab rebounds after missed shots. 3 pointer: A 3 pointer is a shot taken from beyond the three-point line, with the potential to score three points. The video captures moments where players attempt and make successful 3-point shots. Foul: A foul is a violation of the rules, often resulting in free throws for the opposing team. While the video does not explicitly show fouls, it is mentioned in the answer that potential fouls occur during the game. The base description provides additional context about the video. It mentions that the footage is taken from a high vantage point, likely from the upper level of the arena. The scoreboard indicates that the game is being broadcasted on ESPN and shows the score, time remaining, and team abbreviations. The description also highlights the excitement of the crowd and the intense atmosphere of a high-stakes playoff game. In summary, the video is a basketball game highlight showcasing LeBron James and featuring moments of rebounding, 3-point shots, and potential fouls. The base description provides further details about the game, the teams involved, and the overall atmosphere.</p>
+</section>
+<section id="thoughts-1" class="level1">
+<h1>Thoughts</h1>
+<p>This response is slightly better, it actually answered my question about basketball terminology as well as provided that the game was on ESPN. However, the score and the play are both not true.</p>
+</section>
+<section id="prompting-1" class="level1">
+<h1>Prompting</h1>
+<p>I tried it again with a temperature of 0.01.</p>
+</section>
+<section id="response-3" class="level1">
+<h1>Response #3</h1>
+<p>The video captures a thrilling moment from a basketball game between the Miami Heat and the San Antonio Spurs. The footage is taken from a high vantage point, providing a clear view of the court and the crowd. The game is in the fourth quarter with the Heat leading by 3 points, 89-86, with 9:11 remaining on the game clock. The focus is on the Heat’s number 34, LeBron James, who is in possession of the basketball. LeBron skillfully maneuvers around a Spurs defender and makes a layup, scoring for the Heat. The crowd erupts in cheers as LeBron completes the basket, and his teammates on the bench join in the celebration. The video showcases the intensity and excitement of professional basketball, highlighting the athleticism and skill of the players, as well as the passion and engagement of the fans.</p>
+</section>
+<section id="thoughts-2" class="level1">
+<h1>Thoughts</h1>
+<p>This response is still inaccurate. However, the “chapters” of the video are accurate. I’m not sure why it’s not able to summarize the video but can categorize the video into different sections.</p>
+<section id="chapters" class="level4">
+<h4 class="anchored" data-anchor-id="chapters">Chapters:</h4>
+<ol type="1">
+<li><p>Intense Playoff Game 00:00:00 - 00:00:09 The video captures a thrilling moment from a basketball game between the Miami Heat and the San Antonio Spurs, as indicated by the team abbreviations ‘MIA’ and ‘SAS’ displayed on the scoreboard. The footage is taken from a high vantage point, likely from the upper level of the arena, providing a clear view of the court and the crowd. The scoreboard shows that the game is in the fourth quarter with the Heat leading by 3 points, 89-86, with 9:11 remaining on the game clock. The scoreboard also displays the ‘ESPN’ logo, suggesting that the game is being broadcasted on ESPN.</p></li>
+<li><p>LeBron’s Incredible Shot 00:00:10 - 00:00:30 As LeBron approaches the basket, he is met by a Spurs defender who attempts to block his shot. LeBron skillfully maneuvers around the defender and makes a layup, scoring for the Heat. The crowd erupts in cheers as LeBron completes the basket, and his teammates on the bench join in the celebration.</p></li>
+<li><p>Ray Allen’s Game-Tying Three 00:00:34 - 00:00:48 Ray Allen hit a huge three-pointer to tie the game. He backed up behind the three-point line as he caught the pass and then came right back into the shot. The crowd goes wild as the game is now tied.</p></li>
+</ol>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Overall, I think the model is solid. It does a good job summarizing the video through chapters but is not able to tell me key details about the video such as what shot he took, the time left in the game, and who shot the ball. I hope to try the model with other sports to see how it performs.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
