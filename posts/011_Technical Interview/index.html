@@ -8,7 +8,7 @@
 
 <meta name="author" content="Jason Saito">
 <meta name="dcterms.date" content="2024-03-19">
-<meta name="description" content="Will AI pass the SWE technical interview?">
+<meta name="description" content="Will AI pass the data analytics technical interview?">
 
 <title>My Explorations with LLMs - Passing the Google Data Analytics Interview</title>
 <style>
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <h1 class="title">Passing the Google Data Analytics Interview</h1>
                   <div>
         <div class="description">
-          Will AI pass the SWE technical interview?
+          Will AI pass the data analytics technical interview?
         </div>
       </div>
                           <div class="quarto-categories">
@@ -161,8 +161,71 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>I wanted to see if various LLMs could pass the technical side of the data analytics interview. I first began by running the model through Google’s interview simulation.</p>
+</section>
+<section id="technical-question-1" class="level1">
+<h1>Technical Question #1</h1>
+<p>What are the advantages of using a version control system like Git?</p>
+</section>
+<section id="reply" class="level1">
+<h1>Reply</h1>
+<p><img src="index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-2-1f6d28fa-1dd3-4f46-b88e-c9bedfa25d59.png" class="img-fluid" alt="image.png"> Overall, the model performed well and was able to satisfy Google’s three main answer criteria of job-related terms, most-used words, and talking points.</p>
+</section>
+<section id="situtational-question-1" class="level1">
+<h1>Situtational Question #1</h1>
+<p>I then asked it a situational question.</p>
+</section>
+<section id="reply-1" class="level1">
+<h1>Reply</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-4-709026dd-8343-4fab-afbc-aa9172d752df.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+<p>It seems that this response is much weaker than the technical answer before.</p>
+</section>
+<section id="prompt-1" class="level1">
+<h1>Prompt #1</h1>
+<p>I first provided the model with an easy leetcode problem about databases.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-3-4de86f67-3005-4d9c-869e-b1441ebdca12.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+</section>
+<section id="response-from-gemini-pro" class="level1">
+<h1>Response from Gemini Pro</h1>
+<p>The response was accepted on the first try with a pretty average efficiency and runtime.</p>
+</section>
+<section id="prompt-2" class="level1">
+<h1>Prompt #2</h1>
+<p>I then provided the Gemini Pro model with a medium leetcode problem.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-1-07323505-d75f-4dcd-b7d2-78761387b74e.png" class="img-fluid figure-img"></p>
+<figcaption>image.png</figcaption>
+</figure>
+</div>
+</section>
+<section id="response" class="level1">
+<h1>Response</h1>
+<p>This response was also accepted on the first try with pretty average efficiency and runtime.</p>
+</section>
+<section id="prompt-3" class="level1">
+<h1>Prompt #3</h1>
+<p>I then provided a hard leetcode problem.</p>
+<p><img src="index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-5-927d1617-a688-4115-a31c-fe7d346b762b.png" class="img-fluid" alt="image.png"> # Response The model got the question wrong three times in a row, even after I provided it the feedback from leetcode on what test case failed.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Overall, Gemini Pro did pretty well against both the interview questions and the coding questions. It seems to struggle with more personalized questions and advanced data analytics programming questions.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
