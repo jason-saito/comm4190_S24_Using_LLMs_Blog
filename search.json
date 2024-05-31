@@ -88,14 +88,21 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Hello everyone! I’m Jason, a Junior in the College of Arts and Science, studying Cognitive Science and Data Science. I’m excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!"
+    "text": "Hello everyone! I’m Jason Saito, a Junior in the College of Arts and Science, studying Cognitive Science and Data Science. I’m excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!"
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About",
     "section": "Education",
-    "text": "Education\nUniversity of Pennsylvania | Philadelphia, PA Candidate for Bachelor of Arts in Cognitive Science"
+    "text": "Education\nUniversity of Pennsylvania | Philadelphia, PA Candidate for Bachelor of Arts in Cognitive Science\nSaint John’s High School | Shrewsbury, MA Graduated in 2022"
+  },
+  {
+    "objectID": "interests.html",
+    "href": "interests.html",
+    "title": "My Quarto Document",
+    "section": "",
+    "text": "My Cards\n\n\nCard header\n\n\n&lt;h5 class=\"card-title\"&gt;Special title treatment&lt;/h5&gt;\n&lt;h6 class=\"card-subtitle text-muted\"&gt;Support card subtitle&lt;/h6&gt;\n\n  Image cap \n\n&lt;p class=\"card-text\"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;\n\n\n\nCras justo odio\n\n\nDapibus ac facilisis in\n\n\nVestibulum at eros\n\n\n\n&lt;a href=\"#\" class=\"card-link\"&gt;Card link&lt;/a&gt;\n&lt;a href=\"#\" class=\"card-link\"&gt;Another link&lt;/a&gt;\n\n\n2 days ago\n\n\n\n\n&lt;h4 class=\"card-title\"&gt;Card title&lt;/h4&gt;\n&lt;h6 class=\"card-subtitle mb-2 text-muted\"&gt;Card subtitle&lt;/h6&gt;\n&lt;p class=\"card-text\"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;\n&lt;a href=\"#\" class=\"card-link\"&gt;Card link&lt;/a&gt;\n&lt;a href=\"#\" class=\"card-link\"&gt;Another link&lt;/a&gt;"
   },
   {
     "objectID": "posts/016_Claude 3 Riddles/index.html",
