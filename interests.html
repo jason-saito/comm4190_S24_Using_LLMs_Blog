@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jason Saito">
-<meta name="dcterms.date" content="2024-03-28">
-<meta name="description" content="Can LLMs understand sports analytics?">
 
-<title>My Explorations with LLMs - LLMs and Basketball Analytics</title>
+<title>My Explorations with LLMs - Interests</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,19 +68,77 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">My Explorations with LLMs</span>
     </a>
   </div>
@@ -92,15 +149,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../interests.html"> 
+    <a class="nav-link active" href="./interests.html" aria-current="page"> 
 <span class="menu-text">Interests</span></a>
   </li>  
   <li class="nav-item compact">
@@ -123,149 +180,161 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">LLMs and Basketball Analytics</h1>
-                  <div>
-        <div class="description">
-          Can LLMs understand sports analytics?
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">Sports Analytics</div>
-                <div class="quarto-category">Mixtral Instruct</div>
-                <div class="quarto-category">Gemini</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Interests</h1>
+                      </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Jason Saito </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">March 28, 2024</p>
-      </div>
-    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="ChatGPT">ChatGPT <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Llama 2">Llama 2 <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Reasoning">Reasoning <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<p>I wanted to see how well AI can keep track of sports plays and sports data to conduct analysis. I also wanted to see how well it can make strategies. First I begun by giving the models a play-by-play and asking them what the final score was. This task was pretty simple since it’s named at the bottom of the play-by-play, but in the past, models have gotten in wrong. <img src="index_files/figure-html/daaa074d-4243-435a-aa6b-174b47b1a7e2-1-710b22af-b440-45be-b214-6fcac9f4f450.png" class="img-fluid" alt="image.png"></p>
+<section id="interests" class="level1">
+<h1>Interests</h1>
+<section id="basketball" class="level2">
+<h2 class="anchored" data-anchor-id="basketball">Basketball</h2>
+<div class="scrollable-row">
+<p><img src="jason.png" width="200" height="200"> <img src="jason.png" width="200" height="200"> <img src="jason.png" width="200" height="200"> <!-- Add more images as needed --></p>
+</div>
 </section>
-<section id="prompt-1" class="level1">
-<h1>Prompt #1</h1>
-<p>Given the following ESPN play-by-play of the last two minutes of the Boston Celtics versus the OKC Thunder game, what was the final score of the game, for context Payton Pritchard is on the Boston Celtics and so is Lindy Waters III. 1:50 Bismack Biyombo makes 7-foot hook shot (Aaron Wiggins assists) 98 129 1:36 Payton Pritchard makes 15-foot pullup jump shot 98 131 1:24 Aaron Wiggins lost ball turnover (Luke Kornet steals) 98 131 1:20 Lindy Waters III shooting foul 98 131 1:20 Oshae Brissett makes free throw 1 of 2 98 132 1:20 Oshae Brissett makes free throw 2 of 2 98 133 1:01 Lindy Waters III makes 6-foot driving floating jump shot 100 133 50.1 Payton Pritchard makes driving layup 100 135 31.2 Gordon Hayward misses 22-foot three point jumper 100 135 30.2 Oshae Brissett defensive rebound 100 135 6.0 shot clock turnover 100 135 0.0 End of the 4th Quarter 100 135 0.0 End of Game 100 135</p>
-</section>
-<section id="mixtral-response" class="level1">
-<h1>Mixtral Response</h1>
-<p>The final score of the game was 135-100, with the Boston Celtics winning over the OKC Thunder. Payton Pritchard, a guard for the Celtics, made a 15-foot pull-up jump shot to bring the score to 98-131, and then made a driving layup to bring the score to 100-135. Lindy Waters III, a guard for the Thunder, committed a shooting foul and made a 6-foot driving floating jump shot, scoring 2 points for the Thunder during the last two minutes of the game.</p>
-</section>
-<section id="gemini-pro-response" class="level1">
-<h1>Gemini Pro Response</h1>
-<p>Celtics 135, Thunder 100</p>
-</section>
-<section id="thoughts" class="level1">
-<h1>Thoughts</h1>
-<p>While I prefer the Mixtral model’s response since it was a little more in-depth than the Gemini Pro response, both are correct. I then asked both models to summarize a play-by-play.</p>
-</section>
-<section id="prompt-2" class="level1">
-<h1>Prompt #2</h1>
-<p>This is the ESPN play by play of the first quarter of the Celtics Thunder game. summarize it. TIME PLAY OKC BOS 12:00 Chet Holmgren vs.&nbsp;Kristaps Porzingis 0 0 11:39 Jaylen Brown misses 24-foot three point jumper 0 0 11:38 Kristaps Porzingis offensive rebound 0 0 11:35 Luguentz Dort personal foul 0 0 11:21 Kristaps Porzingis makes 11-foot two point shot 0 2 11:05 Chet Holmgren misses 27-foot three point jumper 0 2 11:03 Chet Holmgren offensive rebound 0 2 10:58 Chet Holmgren makes driving layup 2 2 10:40 Derrick White misses 25-foot three point jumper 2 2 10:39 Chet Holmgren defensive rebound 2 2 10:25 Derrick White blocks Chet Holmgren ’s 11-foot driving floating jump shot 2 2 10:23 Kristaps Porzingis defensive rebound 2 2</p>
-</section>
-<section id="mixtral-response-1" class="level1">
-<h1>Mixtral Response</h1>
-<p>The play-by-play shows the first quarter of the Boston Celtics vs.&nbsp;OKC Thunder game. At the start of the quarter, Chet Holmgren of the Thunder and Kristaps Porzingis of the Celtics faced off. The Celtics scored the first points of the game with a two-point shot by Porzingis, and both teams traded baskets for the rest of the quarter with the Celtics leading 30-23 at the end of the first quarter. Jaylen Brown and Jayson Tatum were the top scorers for the Celtics, while Chet Holmgren, Josh Giddey, and Jaylin Williams played well for the Thunder. There were several lead changes and turnovers in the quarter, with both teams trying to establish their offense.</p>
-</section>
-<section id="gemini-pro-response-1" class="level1">
-<h1>Gemini Pro Response</h1>
-<p>The Celtics and Thunder played a close first quarter, with the Celtics ultimately taking a 30-23 lead. The Celtics started the game strong, with Kristaps Porzingis scoring the first two points of the game. The Thunder quickly tied it up, but the Celtics took a 7-2 lead after a three-pointer from Jaylen Brown. The Thunder fought back, and the game was tied at 14-14 with 6:24 remaining in the quarter. The Celtics then went on a 6-0 run, taking a 20-14 lead. The Thunder cut the lead to 20-19, but the Celtics scored the final four points of the quarter to take a 30-23 lead into the second quarter. Jayson Tatum led the Celtics with 12 points in the first quarter, while Jaylen Brown added 6 points. Kristaps Porzingis and Al Horford each had 4 points, and Derrick White had 3 points. For the Thunder, Josh Giddey led the way with 8 points. Luguentz Dort added 6 points, and Jaylin Williams had 4 points.</p>
-</section>
-<section id="thoughts-1" class="level1">
-<h1>Thoughts</h1>
-<p>These responses are also both correct and very in-depth. I’m not sure how the models both know the correct final score of the first quarter since it was not indicated in the prompt and the data cutoffs are both before the game occured. I intend to further look into this in the future</p>
-</section>
-<section id="prompt-3" class="level1">
-<h1>Prompt #3</h1>
-<p>Given the stats of the OKC Thunder and the Boston Celtics (I provided the stats from Espn.com), imagine you are the coach of the boston celtics how would you strategize beating the Thunder?</p>
-</section>
-<section id="mixtral-response-2" class="level1">
-<h1>Mixtral Response</h1>
-<p>Given the stats, here’s a potential strategy for the Boston Celtics to beat the OKC Thunder:</p>
-<ol type="1">
-<li>Defensive Strategy: The Celtics should focus on limiting the offensive production of Shai Gilgeous-Alexander and Chet Holmgren, who are the top scorers and rebounders for the Thunder. Jayson Tatum and Kristaps Porzingis can take turns guarding Holmgren due to their size, while Derrick White and Jaylen Brown can take on the challenge of guarding Gilgeous-Alexander. The Celtics should also aim to limit the Thunder’s second-chance points by boxing out and securing defensive rebounds.</li>
-<li>Offensive Strategy: The Celtics have a balanced offensive attack with multiple scoring options. They should look to exploit their size advantage in the paint with Porzingis, Al Horford, and Tatum against a relatively smaller OKC team. Additionally, they should look to create open shots for their perimeter players, such as Brown and Tatum, by utilizing screens and ball movement to disrupt the Thunder’s defense.</li>
-<li>Transition Defense: The Thunder are a relatively young and athletic team, so the Celtics should prioritize getting back on defense to prevent fast-break opportunities. They should look to push the pace on offense but also be mindful of not leaving themselves vulnerable to easy baskets in transition.</li>
-<li>Ball Movement: The Celtics should emphasize ball movement and player movement on offense to create open shots and force the Thunder’s defense to work harder. This will also help prevent the Thunder from focusing too much attention on any one player, as the Celtics have multiple scoring options.</li>
-<li>Adjustments: As with any game, the Celtics should be prepared to make in-game adjustments based on how the Thunder are defending and attacking. This could include changing up their defensive matchups, altering their offensive sets, or incorporating new plays to keep the Thunder off-balance.</li>
-</ol>
-<p>Overall, the Celtics should look to utilize their balanced roster and size advantage to control the game’s tempo and limit the Thunder’s offensive production. By executing their game plan effectively, they can increase their chances of securing a victory.</p>
-</section>
-<section id="gemini-pro-response-2" class="level1">
-<h1>Gemini Pro Response</h1>
-<section id="beating-the-okc-thunder-a-celtics-coachs-strategy" class="level4">
-<h4 class="anchored" data-anchor-id="beating-the-okc-thunder-a-celtics-coachs-strategy">Beating the OKC Thunder: A Celtics Coach’s Strategy</h4>
-<p>The OKC Thunder are a young and talented team centered around their star guard, Shai Gilgeous-Alexander. To secure a victory, the Celtics need a game plan that exploits the Thunder’s weaknesses and leverages Boston’s strengths.</p>
-<p>Here’s a potential strategy:</p>
-<p><strong>Defense:</strong></p>
-<ul>
-<li><strong>Limit Shai Gilgeous-Alexander:</strong> He’s their primary scorer and playmaker. Employing a strategy like Box-and-1 or Triangle-and-2 could disrupt his rhythm and force other players to step up. Jrue Holiday, known for his defensive prowess, should be the primary defender, with help from Derrick White and Marcus Smart.</li>
-<li><strong>Control the Paint:</strong> Chet Holmgren is a shot-blocking threat, but the Thunder lack significant size beyond him. The Celtics should attack the rim with Jayson Tatum and Jaylen Brown, drawing fouls and creating scoring opportunities. Al Horford and Robert Williams should be active on the offensive glass.</li>
-<li><strong>Pressure the Perimeter:</strong> The Thunder have several shooters like Isaiah Joe and Aaron Wiggins, but they are not a high-volume three-point shooting team. The Celtics can afford to pressure the ball handlers and force them into contested mid-range shots or turnovers.</li>
-</ul>
-<p><strong>Offense:</strong></p>
-<ul>
-<li><strong>Exploit Mismatches:</strong> The Celtics have a versatile offense with multiple scoring options. Tatum and Brown should attack the weaker defenders, while Horford and Williams can exploit their size advantage in the post.</li>
-<li><strong>Move the Ball:</strong> The Thunder are a young team and can be prone to defensive lapses. Quick ball movement and player movement can create open shots and scoring opportunities.</li>
-<li><strong>Control the Pace:</strong> The Celtics should aim for a slower pace, limiting the Thunder’s fast-break opportunities and forcing them into a half-court game.</li>
-</ul>
-<p><strong>Additional Considerations:</strong></p>
-<ul>
-<li><strong>Bench Depth:</strong> The Celtics have a deeper bench than the Thunder. Utilizing the bench effectively can keep the starters fresh and maintain offensive pressure throughout the game.</li>
-<li><strong>Coaching Adjustments:</strong> Being prepared to adjust the game plan based on the flow of the game is crucial.</li>
-</ul>
-<p><strong>Key Matchups:</strong></p>
-<ul>
-<li><strong>Jrue Holiday vs.&nbsp;Shai Gilgeous-Alexander:</strong> Limiting SGA’s impact is crucial for the Celtics’ success.</li>
-<li><strong>Jayson Tatum/Jaylen Brown vs.&nbsp;Luguentz Dort:</strong> Dort is a strong defender, but Tatum and Brown’s offensive versatility should give them the edge.</li>
-<li><strong>Al Horford/Robert Williams vs.&nbsp;Chet Holmgren:</strong> The Celtics big men need to be physical and aggressive against Holmgren, limiting his shot-blocking and rebounding.</li>
-</ul>
-<p>By focusing on these strategies and exploiting the Thunder’s weaknesses, the Celtics can increase their chances of securing a victory.</p>
-</section>
-</section>
-<section id="thoughts-2" class="level1">
-<h1>Thoughts</h1>
-<p>I really like the formatting of the Gemini Pro response and how it breaks the analysis down into smaller sections. I did notice that the Gemini Pro response did include a player who was traded off the team a year ago, showing that the model is actually using 2023 data. In addition, I think Mixtral’s response is also very good, they’re both in-depth, accurate, and reasonable approaches.</p>
-</section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>It’s really interesting that both these models performed well and accurately even though their data cutoffs are in 2023 while the game occured in April of 2024. There are some sentences that indicate that the models could be using 2023 data, I think that the models are performing well since these teams haven’t changed much since the 2022-2023 season. I hope to further use and explore these models in the future.</p>
+<section id="music" class="level2">
+<h2 class="anchored" data-anchor-id="music">Music</h2>
+<div class="scrollable-row">
+<p><img src="jason.png" width="200" height="200"> <img src="jason.png" width="200" height="200"> <img src="jason.png" width="200" height="200"> <!-- Add more images as needed --></p>
+</div>
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717176876059" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<a href="./projects/001_project1/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="projects/001_project1/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Testing Logical Reasoning
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="card-text listing-description">
+Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason Saito
+</div>
+<div class="listing-date">
+Feb 8, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717176876063" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<a href="./projects/002_project2/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="projects/002_project2/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Testing Logical Reasoning
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="card-text listing-description">
+Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason Saito
+</div>
+<div class="listing-date">
+Feb 8, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717176876063" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<a href="./projects/003_project3/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="projects/003_project3/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Testing Logical Reasoning
+</h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="card-text listing-description">
+Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Jason Saito
+</div>
+<div class="listing-date">
+Feb 8, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
