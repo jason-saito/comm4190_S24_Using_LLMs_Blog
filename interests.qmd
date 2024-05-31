@@ -1,0 +1,32 @@
+---
+title: Interests
+listing:
+  contents: projects
+  sort: date desc
+  type: grid
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+# Interests
+
+## Basketball
+
+<div class="scrollable-row">
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  <!-- Add more images as needed -->
+</div>
+
+## Music
+
+<div class="scrollable-row">
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  <!-- Add more images as needed -->
+</div>
