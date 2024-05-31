@@ -15,10 +15,12 @@ about:
 
 ### Welcome!
 
-Hello everyone! I'm Jason, a Junior in the College of Arts and Science, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
+Hello everyone! I'm Jason Saito, a Junior in the College of Arts and Science, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
 
 ## Education
 
 University of Pennsylvania | Philadelphia, PA
 Candidate for Bachelor of Arts in Cognitive Science
 
+Saint John's High School | Shrewsbury, MA
+Graduated in 2022
