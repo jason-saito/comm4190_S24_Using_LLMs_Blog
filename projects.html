@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Jason Saito">
-<meta name="dcterms.date" content="2024-02-27">
-<meta name="description" content="Exploring various tools and history of AI-generated Music">
 
-<title>My Explorations with LLMs - Exploring AI-Generated Music</title>
+<title>My Explorations with LLMs - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,22 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,19 +68,77 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">My Explorations with LLMs</span>
     </a>
   </div>
@@ -92,11 +149,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item compact">
@@ -119,105 +176,108 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Exploring AI-Generated Music</h1>
-                  <div>
-        <div class="description">
-          Exploring various tools and history of AI-generated Music
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">Music</div>
-                <div class="quarto-category">Suno AI</div>
-                <div class="quarto-category">Gemini</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Projects</h1>
+                      </div>
   </div>
     
   
-  <div class="quarto-title-meta">
+  <div class="quarto-title-meta column-page-left">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Jason Saito </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">February 27, 2024</p>
-      </div>
-    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ChatGPT">ChatGPT <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Llama 2">Llama 2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Reasoning">Reasoning <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
-<h1>
-Introduction to AI Music
-</h1>
-<p>My first exposure to the world of AI-Generated music came around a year ago when I watched this video.<br></p>
-<p>Being a fan of both Drake and the Weeknd, it was shocking to me how real they sounded in the video. At first, I thought it was a real song but after reading that it was AI generated I was blown away.</p>
-<p><img src="ghost.jpeg"><br> <a href="https://x.com/imghostwrit3r/status/1647623877214732290?s=20">Watch the video here!</a></p>
-<h1>
-Experimenting with AI Music
-</h1>
-<p>One of the first tools I stumbled upon is <a href="https://www.suno.ai/">Suno AI</a>. Immediately you’re greated with examples of AI-generated songs. One of my favorites is titled “Make a song about the moon.”</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="index_files/figure-html/d7f028cf-df36-43bd-87f3-8d1b8b9570e0-2-db2d165c-5ee6-47f1-8886-b412b862eae0.png" class="img-fluid figure-img"></p>
-<figcaption>Suno AI</figcaption>
-</figure>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<p>After seeing a preview of the tool, I decieded to make my own song. I used Gemini to make an R&amp;B song. <img src="index_files/figure-html/d7f028cf-df36-43bd-87f3-8d1b8b9570e0-1-d9e9e104-4a98-47df-b2e4-7f7e7de104ba.png" class="img-fluid" alt="image.png"></p>
-<p>I present,</p>
-<p><img src="index_files/figure-html/66f5ef55-fd12-4b80-952b-1865fa7cc263-1-48c12b61-9dd8-49a2-ab26-0ea0cf645fb9.png" class="img-fluid" alt="Midnight Serenade"><br> <a href="https://app.suno.ai/song/f5ce6fc3-a87c-4e5d-8ffe-2849d454348d">“Midnight Serenade.”</a></p>
-<p>I decided to test out Suno AI’s custom feature where you can give it a genre and lyrics and it will generate the music. I asked Gemini to generate song lyrics for a Dark R&amp;B song similar to R&amp;B artists Giveon, Brent Faiyaz, and Bryson Tiller.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="index_files/figure-html/346487fa-4a5e-44ee-ba38-79730e5444e3-1-b214bf11-5eaa-462a-8bfe-d4bb8720bc22.png" class="img-fluid figure-img"></p>
-<figcaption>image.png</figcaption>
-</figure>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717175697158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="thumbnail">
+<p><a href="./projects/001_project1/index.html" class="no-external"></a></p><a href="./projects/001_project1/index.html" class="no-external">
+<p class="card-img-top"><img src="projects/001_project1/matches.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./projects/001_project1/index.html" class="no-external"></a></p>
 </div>
-<p>Here is <a href="https://app.suno.ai/song/f3466904-9006-4fc2-918f-8c5c5d86156e">“Playing with Fire”</a></p>
-<h1>
-How Does It Work?
-</h1>
-<p>In order to replicate music, the AI is trained on large data sets of pre-existing music. From this data set it analizes the various patterns, tempos, rythms, and lyrics associated with various genres of music.</p>
-<h1>
-Training the Model
-</h1>
-<p>Traditionally, when training a model, the model takes the data and makes a numerical vector. In order to allow the model to understand the various aspects that go into creating music, the model is trained with MIDI files that are structured in terms of notes, rhyhtm changes, and beats per minute. This MIDI file can be used to train the model and is considered a “natural language representation.”</p>
-<p>The Machine Learning algorithms then use the raw audio data for the entire song in the form of “sequential input vectors” that are commonly used in NLP. The model then is able to predict the next token for the song.</p>
-<h1>
-Legal Implications of AI Music
-</h1>
-<p>With the rise of AI music, there is also a rise in copyright and licensing issues. As, when someone uses AI to imitate another artist’s music, this can muddy the waters of who owns the music, the creator, the AI, or the artist themself.</p>
-<h1>
-Conclusion
-</h1>
-<p>Overall, I’m really happy with the result. Even though there are some instances where you can tell that the music is AI-generated, I find it fascinating how accurate and human-like the AI sounds overall. It’s also really impressive to me how the AI can make lyrics on its own based on the genre I tell it. In a future blog post I hope to learn more about how the AI can achieve this and sound like a human while singing.</p>
-<h3 class="anchored">
-Sources
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/001_project1/index.html" class="no-external">Testing Logical Reasoning</a>
 </h3>
-<p>https://www.techopedia.com/how-can-an-ai-model-create-music</p>
-
-
-
-</main> <!-- /main -->
+<div class="listing-subtitle">
+<a href="./projects/001_project1/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="listing-description">
+<a href="./projects/001_project1/index.html" class="no-external">Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./projects/001_project1/index.html" class="no-external">
+<div class="listing-date">
+Feb 8, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

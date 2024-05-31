@@ -19,5 +19,11 @@
       "/posts/002_testing_logic/index.html",
       "/posts/001_product/index.html"
     ]
+  },
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/001_project1/index.html"
+    ]
   }
 ]
