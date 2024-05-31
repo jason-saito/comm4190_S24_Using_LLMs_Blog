@@ -1,1 +1,7 @@
 /* css styles */
+/* In your styles.css file */
+.project-grid {  /* Or the class Quarto uses for grid listings */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Example: 3 columns min 300px wide */
+  gap: 20px; /* Adjust spacing between projects */
+}
