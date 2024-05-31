@@ -1,7 +1,6 @@
 ---
 title: Interests
 listing:
-  contents: projects
   sort: date desc
   type: grid
   categories: true
@@ -16,6 +15,12 @@ title-block-banner: true
 ## Basketball
 
 <div class="scrollable-row">
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
+  ![](jason.png){width=200 height=200}
   ![](jason.png){width=200 height=200}
   ![](jason.png){width=200 height=200}
   ![](jason.png){width=200 height=200}
