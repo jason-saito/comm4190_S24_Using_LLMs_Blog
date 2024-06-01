@@ -15,7 +15,9 @@ about:
 
 ### Welcome!
 
-Hello everyone! My name is Jason Saito, a Junior at the University of Pennsylvania, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
+Hey everyone! My name is Jason Saito, I'm a Junior at the University of Pennsylvania, studying Cognitive Science and Data Analytics. 
+
+I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
 
 ## Education
 
