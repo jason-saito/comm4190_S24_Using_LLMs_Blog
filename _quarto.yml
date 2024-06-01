@@ -5,7 +5,7 @@ website:
   title: "My Explorations with LLMs"
   navbar:
     right:
-      - about.qmd
+      - blog.qmd
       - projects.qmd
       - interests.qmd
       - icon: github
