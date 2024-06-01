@@ -1,5 +1,5 @@
 ---
-title: "Jason Saito's Website"
+title: "About Me"
 about:
   id: hero-heading
   template: jolla
@@ -15,7 +15,7 @@ about:
 
 ### Welcome!
 
-Hello everyone! I'm Jason, a Sophomore in the College of Arts and Science, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
+Hello everyone! I'm Jason, a Junior at the University of Pennsylvania, studying Cognitive Science and Data Science. I'm excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!
 
 ## Education
 
