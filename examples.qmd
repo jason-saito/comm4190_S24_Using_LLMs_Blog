@@ -1,0 +1,43 @@
+---
+title: "Examples"
+author: "Your Name"
+format: html
+theme: morph
+css: styles.css
+---
+
+# Examples
+
+<div class="project">
+  <div class="project-text">
+    <h2>Project Name 01</h2>
+    <h4>Role Title</h4>
+    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+  </div>
+  <div class="project-image">
+    <img src="image.png" alt="Project Image">
+  </div>
+</div>
+
+<style>
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  .project-text {
+    flex: 1;
+    margin-right: 1em;
+  }
+
+  .project-image {
+    flex: 1;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+</style>
