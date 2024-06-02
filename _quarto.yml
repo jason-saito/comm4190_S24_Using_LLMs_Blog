@@ -6,6 +6,7 @@ website:
   navbar:
     right:
       - blog.qmd
+      - about.qmd
       - projects.qmd
       - interests.qmd
       - icon: github
