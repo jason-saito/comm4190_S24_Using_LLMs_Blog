@@ -21,6 +21,14 @@
     ]
   },
   {
+    "listing": "/examples.html",
+    "items": [
+      "/projects/001_project1/index.html",
+      "/projects/002_project2/index.html",
+      "/projects/003_project3/index.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects/001_project1/index.html",
