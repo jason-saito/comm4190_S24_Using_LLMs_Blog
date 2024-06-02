@@ -21,27 +21,6 @@
     ]
   },
   {
-    "listing": "/examples.html",
-    "items": [
-      "/posts/018_Children's Song AI/index.html",
-      "/posts/016_Claude 3 Riddles/index.html",
-      "/posts/015_Sports Analytics +LLMs/index.html",
-      "/posts/014_ESPN Analyst/index.html",
-      "/posts/012_AI and Videos/index.html",
-      "/posts/013_Football Analytics/index.html",
-      "/posts/011_Technical Interview/index.html",
-      "/posts/010_LLM Interview/index.html",
-      "/posts/008_RAG/index.html",
-      "/posts/007_Exploring AI Music/index.html",
-      "/posts/006_NBA Data/index.html",
-      "/posts/005_Hackathon/index.html",
-      "/posts/004_Images + Text/index.html",
-      "/posts/003_Book/index.html",
-      "/posts/002_testing_logic/index.html",
-      "/posts/001_product/index.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/001_project1/index.html",
