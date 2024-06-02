@@ -16,7 +16,6 @@ website:
 format:
   html:
     theme: morph
-    css: styles.css
 
 execute:
   freeze: auto
