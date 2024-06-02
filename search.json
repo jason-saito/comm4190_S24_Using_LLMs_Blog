@@ -81,7 +81,7 @@
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "Hey everyone! My name is Jason Saito, I’m a Junior at the University of Pennsylvania, studying Cognitive Science and Data Analytics.\nI’m excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!"
+    "text": "Hello everyone! My name is Jason Saito, a Junior at the University of Pennsylvania, studying Cognitive Science and Data Science. I’m excited to take you through my journey into the world of Artificial Intelligence and Large Language Models!"
   },
   {
     "objectID": "index.html#education",
@@ -96,34 +96,6 @@
     "title": "My Quarto Document",
     "section": "",
     "text": "My Cards\n\n\nCard header\n\n\n&lt;h5 class=\"card-title\"&gt;Special title treatment&lt;/h5&gt;\n&lt;h6 class=\"card-subtitle text-muted\"&gt;Support card subtitle&lt;/h6&gt;\n\n  Image cap \n\n&lt;p class=\"card-text\"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;\n\n\n\nCras justo odio\n\n\nDapibus ac facilisis in\n\n\nVestibulum at eros\n\n\n\n&lt;a href=\"#\" class=\"card-link\"&gt;Card link&lt;/a&gt;\n&lt;a href=\"#\" class=\"card-link\"&gt;Another link&lt;/a&gt;\n\n\n2 days ago\n\n\n\n\n&lt;h4 class=\"card-title\"&gt;Card title&lt;/h4&gt;\n&lt;h6 class=\"card-subtitle mb-2 text-muted\"&gt;Card subtitle&lt;/h6&gt;\n&lt;p class=\"card-text\"&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;\n&lt;a href=\"#\" class=\"card-link\"&gt;Card link&lt;/a&gt;\n&lt;a href=\"#\" class=\"card-link\"&gt;Another link&lt;/a&gt;"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Welcome to my portfolio website! I am passionate about product analytics and product management, and I love leveraging data to make informed decisions that drive business growth.\n\n\n\nProduct Analytics: Skilled in data analysis, visualization, and deriving actionable insights to improve product performance.\nProduct Management: Experienced in managing product lifecycles, from ideation to launch, ensuring alignment with business goals and user needs.\n\n\n\n\nExplore my projects to see my work in action. I have worked on various projects that showcase my ability to apply analytical skills to real-world problems and deliver impactful solutions.\n\nProject 1 - Brief description of Project 1.\nProject 2 - Brief description of Project 2.\nProject 3 - Brief description of Project 3.\n\n\n\n\nFeel free to reach out to me for collaboration or if you have any questions. You can contact me at your.email@example.com.\n\nThank you for visiting my portfolio! I look forward to connecting with you."
-  },
-  {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About Me",
-    "section": "",
-    "text": "Product Analytics: Skilled in data analysis, visualization, and deriving actionable insights to improve product performance.\nProduct Management: Experienced in managing product lifecycles, from ideation to launch, ensuring alignment with business goals and user needs."
-  },
-  {
-    "objectID": "about.html#projects",
-    "href": "about.html#projects",
-    "title": "About Me",
-    "section": "",
-    "text": "Explore my projects to see my work in action. I have worked on various projects that showcase my ability to apply analytical skills to real-world problems and deliver impactful solutions.\n\nProject 1 - Brief description of Project 1.\nProject 2 - Brief description of Project 2.\nProject 3 - Brief description of Project 3."
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About Me",
-    "section": "",
-    "text": "Feel free to reach out to me for collaboration or if you have any questions. You can contact me at your.email@example.com.\n\nThank you for visiting my portfolio! I look forward to connecting with you."
   },
   {
     "objectID": "blog.html",
