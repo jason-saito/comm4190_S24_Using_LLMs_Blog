@@ -1,43 +1,50 @@
 ---
 title: "Examples"
-author: "Your Name"
-format: html
-theme: morph
-css: styles.css
+listing:
+  contents: posts
+  sort: date desc
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+include-in-header:
+  - text: |
+      <link rel="stylesheet" href="styles.css">
 ---
 
-# Examples
+# My Explorations with LLMs
 
-<div class="project">
-  <div class="project-text">
-    <h2>Project Name 01</h2>
-    <h4>Role Title</h4>
-    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
-  </div>
-  <div class="project-image">
-    <img src="image.png" alt="Project Image">
-  </div>
+<!-- Custom category bubbles -->
+<div class="category-bubbles">
+  <a href="?category=All" class="category-bubble">All</a>
+  <a href="?category=Basketball" class="category-bubble">Basketball</a>
+  <a href="?category=ChatGPT" class="category-bubble">ChatGPT</a>
+  <a href="?category=Claude 3 Opus" class="category-bubble">Claude 3 Opus</a>
+  <a href="?category=Communication" class="category-bubble">Communication</a>
+  <a href="?category=Content Creation" class="category-bubble">Content Creation</a>
+  <a href="?category=DALL-E" class="category-bubble">DALL-E</a>
+  <a href="?category=Data Analysis" class="category-bubble">Data Analysis</a>
+  <a href="?category=Football" class="category-bubble">Football</a>
+  <a href="?category=Gemini" class="category-bubble">Gemini</a>
+  <a href="?category=Generative AI" class="category-bubble">Generative AI</a>
+  <a href="?category=Huru AI" class="category-bubble">Huru AI</a>
+  <a href="?category=Llava" class="category-bubble">Llava</a>
+  <a href="?category=Langchain" class="category-bubble">Langchain</a>
+  <a href="?category=Llama 2" class="category-bubble">Llama 2</a>
+  <a href="?category=Mixtral Instruct" class="category-bubble">Mixtral Instruct</a>
+  <a href="?category=Music" class="category-bubble">Music</a>
+  <a href="?category=Pegasus" class="category-bubble">Pegasus</a>
+  <a href="?category=Product Design" class="category-bubble">Product Design</a>
+  <a href="?category=Reasoning" class="category-bubble">Reasoning</a>
+  <a href="?category=Retrieval Augmented Generation" class="category-bubble">Retrieval Augmented Generation</a>
+  <a href="?category=SUNO AI" class="category-bubble">SUNO AI</a>
+  <a href="?category=Suno AI" class="category-bubble">Suno AI</a>
+  <a href="?category=Twelve Labs" class="category-bubble">Twelve Labs</a>
+  <a href="?category=Twelvelabs" class="category-bubble">Twelvelabs</a>
+  <a href="?category=VEED.IO" class="category-bubble">VEED.IO</a>
 </div>
 
-<style>
-  .project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 2em;
-  }
+# Blog Posts
 
-  .project-text {
-    flex: 1;
-    margin-right: 1em;
-  }
-
-  .project-image {
-    flex: 1;
-  }
-
-  .project-image img {
-    width: 100%;
-    height: auto;
-  }
-</style>

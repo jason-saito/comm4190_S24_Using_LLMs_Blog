@@ -1,0 +1,24 @@
+.category-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-bubble {
+  background-color: #e0f7fa;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #00796b;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.category-bubble:hover {
+  background-color: #b2ebf2;
+}
+
+.quarto-listing-categories a {
+  display: none; /* Hide default categories listing */
+}
