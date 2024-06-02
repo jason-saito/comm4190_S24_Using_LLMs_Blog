@@ -1,5 +1,6 @@
 ---
 title: Projects
+template: jolla
 listing:
   contents: projects
   sort: date desc

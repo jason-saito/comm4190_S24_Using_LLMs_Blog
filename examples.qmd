@@ -4,7 +4,7 @@ listing:
   contents: projects
   sort: date desc
   type: grid
-  categories: true
+  categories: trues
   sort-ui: false
   filter-ui: false
 page-layout: custom
