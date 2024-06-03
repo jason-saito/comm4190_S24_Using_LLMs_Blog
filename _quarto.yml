@@ -19,7 +19,7 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/in/jason-saito/
       - icon: gmail
-        href: mailto: jsaito@sas.upenn.edu
+        href: mailto:jsaito@sas.upenn.edu
 format:
   html:
     theme: morph
