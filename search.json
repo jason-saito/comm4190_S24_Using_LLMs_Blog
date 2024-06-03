@@ -191,16 +191,16 @@
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "Projects & Blog Posts",
+    "title": "{{ item.title }}",
     "section": "",
-    "text": "Explore my recent projects and blog posts:"
+    "text": "Explore my recent projects and blog posts:\n\n\n{% for item in listing.items %} {% if item.category == “projects” %} ::: {.project-card}\n::: {% endif %} {% endfor %}\n\n\n\n{% for item in listing.items %} {% if item.category == “posts” %} ::: {.project-card}\n::: {% endif %} {% endfor %}"
   },
   {
     "objectID": "projects.html#my-latest-work",
     "href": "projects.html#my-latest-work",
-    "title": "Projects & Blog Posts",
+    "title": "{{ item.title }}",
     "section": "",
-    "text": "Explore my recent projects and blog posts:"
+    "text": "Explore my recent projects and blog posts:\n\n\n{% for item in listing.items %} {% if item.category == “projects” %} ::: {.project-card}\n::: {% endif %} {% endfor %}\n\n\n\n{% for item in listing.items %} {% if item.category == “posts” %} ::: {.project-card}\n::: {% endif %} {% endfor %}"
   },
   {
     "objectID": "projects/002_project2/index.html",
