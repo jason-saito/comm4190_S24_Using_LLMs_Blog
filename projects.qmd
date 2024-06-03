@@ -18,11 +18,9 @@ title-block-banner: true
 Explore my recent projects and blog posts:
 
 ### Projects
-
-::: {.project-list filter="projects"}
+::: {.project-list filter="posts"}
 :::
 
 ### Blog Posts
-
 ::: {.project-list filter="posts"}
 :::
