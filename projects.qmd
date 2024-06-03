@@ -4,9 +4,11 @@ listing:
   - id: projects
     contents: projects
     type: grid
+    categories: true
   - id: blogs
     contents: posts
     type: grid
+    categories: true
 ---
 
 ## Lab Reports
