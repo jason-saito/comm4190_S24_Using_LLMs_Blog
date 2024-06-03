@@ -11,9 +11,9 @@ website:
           - text: LLMs Blog
             href: blog.qmd  
           - text: Project 2
-            href: music.qmd  
+            href: blog.qmd  
           - text: Project 3
-            href: basketball.qmd
+            href: blog.qmd
       - icon: github
         href: https://github.com/jason-saito
       - icon: linkedin

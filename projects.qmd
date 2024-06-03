@@ -1,7 +1,9 @@
 ---
-title: Projects
+title: Projects & Blog Posts
 listing:
-  contents: projects, posts
+  contents: 
+    - projects
+    - posts 
   sort: date desc
   type: grid
   categories: true
@@ -10,3 +12,17 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+## My Latest Work
+
+Explore my recent projects and blog posts:
+
+### Projects
+
+::: {.project-list filter="projects"}
+:::
+
+### Blog Posts
+
+::: {.project-list filter="posts"}
+:::
