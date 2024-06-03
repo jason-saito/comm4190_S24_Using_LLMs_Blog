@@ -124,6 +124,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-1 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-1'] = new List('listing-listing-1', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -231,7 +259,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="Basketball">Basketball <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ChatGPT">ChatGPT <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Claude 3 Opus">Claude 3 Opus <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Communication">Communication <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Content Creation">Content Creation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="DALL-E">DALL-E <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Data Analysis">Data Analysis <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Gemini">Gemini <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Generative AI">Generative AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Huru AI">Huru AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLava">LLava <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Langchain">Langchain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Llama 2">Llama 2 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Llava">Llava <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mixtral Instruct">Mixtral Instruct <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Music">Music <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pegasus">Pegasus <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Product Design">Product Design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Reasoning">Reasoning <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Retrieval Augmented Generation">Retrieval Augmented Generation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SUNO AI">SUNO AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sports Analytics">Sports Analytics <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Suno AI">Suno AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Twelve Labs">Twelve Labs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Twelvelabs">Twelvelabs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VEED.IO">VEED.IO <span class="quarto-category-count">(2)</span></div><div class="category" data-category="projects">projects <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(42)</span></div><div class="category" data-category="Basketball">Basketball <span class="quarto-category-count">(2)</span></div><div class="category" data-category="ChatGPT">ChatGPT <span class="quarto-category-count">(14)</span></div><div class="category" data-category="Claude 3 Opus">Claude 3 Opus <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Communication">Communication <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Content Creation">Content Creation <span class="quarto-category-count">(6)</span></div><div class="category" data-category="DALL-E">DALL-E <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Data Analysis">Data Analysis <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Gemini">Gemini <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Generative AI">Generative AI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Huru AI">Huru AI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="LLava">LLava <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Langchain">Langchain <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Llama 2">Llama 2 <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Llava">Llava <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Mixtral Instruct">Mixtral Instruct <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Music">Music <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Pegasus">Pegasus <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Product Design">Product Design <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Reasoning">Reasoning <span class="quarto-category-count">(12)</span></div><div class="category" data-category="Retrieval Augmented Generation">Retrieval Augmented Generation <span class="quarto-category-count">(4)</span></div><div class="category" data-category="SUNO AI">SUNO AI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Sports Analytics">Sports Analytics <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Suno AI">Suno AI <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Twelve Labs">Twelve Labs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Twelvelabs">Twelvelabs <span class="quarto-category-count">(2)</span></div><div class="category" data-category="VEED.IO">VEED.IO <span class="quarto-category-count">(4)</span></div><div class="category" data-category="projects">projects <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -258,7 +286,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="lab-reports">Lab Reports</h2>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="projects,Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="0" data-categories="projects,Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./projects/001_project1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/001_project1/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -295,7 +323,7 @@ Feb 8, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="1" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./projects/002_project2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/002_project2/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -329,7 +357,7 @@ Feb 8, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="2" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./projects/003_project3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/003_project3/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -373,7 +401,7 @@ No matching items
 <h2 class="anchored" data-anchor-id="meeting-notes">Meeting Notes</h2>
 <div id="listing-blogs" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Content Creation,SUNO AI,VEED.IO" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1717440290437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366">
+<div class="g-col-1" data-index="0" data-categories="Content Creation,SUNO AI,VEED.IO" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366">
 <a href="./posts/018_Children's Song AI/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/018_Children's Song AI/index_files/figure-html/f21d4602-f514-44e3-aba3-d7bb8ac3df2e-1-e5e73134-80f2-45ae-8925-f217d9c1e7ca.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -407,7 +435,7 @@ Apr 28, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Reasoning,Claude 3 Opus" data-listing-date-sort="1712016000000" data-listing-file-modified-sort="1717440290413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653">
+<div class="g-col-1" data-index="1" data-categories="Reasoning,Claude 3 Opus" data-listing-date-sort="1712016000000" data-listing-file-modified-sort="1717440678804" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653">
 <a href="./posts/016_Claude 3 Riddles/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/016_Claude 3 Riddles/index_files/figure-html/eb86ab1b-f92d-4bdd-b242-01e0b2139f4e-1-3de4e8a8-77bc-4d93-a9e0-e15106dc3d7e.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -438,7 +466,7 @@ Apr 2, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Sports Analytics,LLava,Data Analysis" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1717440290365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
+<div class="g-col-1" data-index="2" data-categories="Sports Analytics,LLava,Data Analysis" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1717440678756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
 <a href="./posts/006_NBA Data/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/006_NBA Data/76ers.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -472,7 +500,7 @@ Feb 22, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Sports Analytics,ChatGPT,VEED.IO" data-listing-date-sort="1711411200000" data-listing-file-modified-sort="1717440290389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921">
+<div class="g-col-1" data-index="3" data-categories="Sports Analytics,ChatGPT,VEED.IO" data-listing-date-sort="1711411200000" data-listing-file-modified-sort="1717440678780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921">
 <a href="./posts/014_ESPN Analyst/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/014_ESPN Analyst/aiespn.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -506,7 +534,7 @@ Mar 26, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Music,Suno AI,Gemini" data-listing-date-sort="1708992000000" data-listing-file-modified-sort="1717440290373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
+<div class="g-col-1" data-index="4" data-categories="Music,Suno AI,Gemini" data-listing-date-sort="1708992000000" data-listing-file-modified-sort="1717440678760" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
 <a href="./posts/007_Exploring AI Music/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/007_Exploring AI Music/ghost.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -540,7 +568,7 @@ Feb 27, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Retrieval Augmented Generation,Langchain,Sports Analytics" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1717440290353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
+<div class="g-col-1" data-index="5" data-categories="Retrieval Augmented Generation,Langchain,Sports Analytics" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1717440678740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
 <a href="./posts/005_Hackathon/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/005_Hackathon/Player.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -574,7 +602,7 @@ Feb 20, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Reasoning,Llava,Data Analysis" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1717440290349" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
+<div class="g-col-1" data-index="6" data-categories="Reasoning,Llava,Data Analysis" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1717440678736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
 <a href="./posts/004_Images + Text/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/004_Images + Text/riddle.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -608,7 +636,7 @@ Feb 15, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Retrieval Augmented Generation,Content Creation,Generative AI" data-listing-date-sort="1709164800000" data-listing-file-modified-sort="1717440290373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="g-col-1" data-index="7" data-categories="Retrieval Augmented Generation,Content Creation,Generative AI" data-listing-date-sort="1709164800000" data-listing-file-modified-sort="1717440678764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
 <a href="./posts/008_RAG/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/008_RAG/RAG.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -642,7 +670,7 @@ Feb 29, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Football,Pegasus,Twelvelabs" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440290389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361">
+<div class="g-col-1" data-index="8" data-categories="Football,Pegasus,Twelvelabs" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440678780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361">
 <a href="./posts/013_Football Analytics/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/013_Football Analytics/index_files/figure-html/e1dc5e95-0935-47ec-bdee-f1ae3a14afd6-1-0301b7d9-b100-475a-9280-a5cc99e870e6.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -676,7 +704,7 @@ Mar 19, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Sports Analytics,Mixtral Instruct,Gemini" data-listing-date-sort="1711584000000" data-listing-file-modified-sort="1717440290413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2179">
+<div class="g-col-1" data-index="9" data-categories="Sports Analytics,Mixtral Instruct,Gemini" data-listing-date-sort="1711584000000" data-listing-file-modified-sort="1717440678800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2179">
 <a href="./posts/015_Sports Analytics +LLMs/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/015_Sports Analytics +LLMs/index_files/figure-html/daaa074d-4243-435a-aa6b-174b47b1a7e2-1-710b22af-b440-45be-b214-6fcac9f4f450.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -710,7 +738,7 @@ Mar 28, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Basketball,Pegasus,Twelve Labs" data-listing-date-sort="1710979200000" data-listing-file-modified-sort="1717440290385" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
+<div class="g-col-1" data-index="10" data-categories="Basketball,Pegasus,Twelve Labs" data-listing-date-sort="1710979200000" data-listing-file-modified-sort="1717440678776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
 <a href="./posts/012_AI and Videos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/012_AI and Videos/index_files/figure-html/9fe68211-64a6-4d4b-b4a4-a56dd75cd0e5-2-cff928b7-3488-493a-9549-c63ce7f32e09.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -744,7 +772,7 @@ Mar 21, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Product Design,ChatGPT,DALL-E" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1717440290229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
+<div class="g-col-1" data-index="11" data-categories="Product Design,ChatGPT,DALL-E" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1717440678620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
 <a href="./posts/001_product/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/001_product/index_files/figure-html/e4236ac7-b50e-437d-9007-640656e3d225-1-86920b3b-2c76-45c7-83b3-1aa47e6dda10.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -778,7 +806,7 @@ Feb 6, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="Gemini,Data Analysis,Communication" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440290381" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<div class="g-col-1" data-index="12" data-categories="Gemini,Data Analysis,Communication" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440678772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
 <a href="./posts/011_Technical Interview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/011_Technical Interview/index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-2-1f6d28fa-1dd3-4f46-b88e-c9bedfa25d59.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -812,7 +840,7 @@ Mar 19, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="13" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./posts/002_testing_logic/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/002_testing_logic/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -846,7 +874,7 @@ Feb 8, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="Claude 3 Opus,Huru AI,Communication" data-listing-date-sort="1710374400000" data-listing-file-modified-sort="1717440290373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2067">
+<div class="g-col-1" data-index="14" data-categories="Claude 3 Opus,Huru AI,Communication" data-listing-date-sort="1710374400000" data-listing-file-modified-sort="1717440678764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2067">
 <a href="./posts/010_LLM Interview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/010_LLM Interview/interview.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -880,7 +908,7 @@ Mar 14, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="Content Creation,ChatGPT,DALL-E" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1717440290349" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
+<div class="g-col-1" data-index="15" data-categories="Content Creation,ChatGPT,DALL-E" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1717440678736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
 <a href="./posts/003_Book/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/003_Book/1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -924,7 +952,858 @@ No matching items
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing-1">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1717440678588" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="thumbnail">
+<p><a href="./index.html" class="no-external"></a></p><a href="./index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./index.html" class="no-external">About Me</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./index.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./index.html" class="no-external">Hello everyone! My name is Jason Saito. I’m a Junior at the University of Pennsylvania, studying Cognitive Science and Data Analytics.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./index.html" class="no-external"></a></p><a href="./index.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Content Creation,SUNO AI,VEED.IO" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366">
+<div class="thumbnail">
+<p><a href="./posts/018_Children's Song AI/index.html" class="no-external"></a></p><a href="./posts/018_Children's Song AI/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/018_Children's Song AI/index_files/figure-html/f21d4602-f514-44e3-aba3-d7bb8ac3df2e-1-e5e73134-80f2-45ae-8925-f217d9c1e7ca.png" alt="image.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/018_Children's Song AI/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/018_Children's Song AI/index.html" class="no-external">Children’s Song with AI</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/018_Children's Song AI/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;">
+Content Creation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SUNO AI'); return false;">
+SUNO AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VEED.IO'); return false;">
+VEED.IO
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/018_Children's Song AI/index.html" class="no-external">Can AI make a children’s song and music video?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/018_Children's Song AI/index.html" class="no-external">
+<div class="listing-date">
+Apr 28, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Reasoning,Claude 3 Opus" data-listing-date-sort="1712016000000" data-listing-file-modified-sort="1717440678804" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653">
+<div class="thumbnail">
+<p><a href="./posts/016_Claude 3 Riddles/index.html" class="no-external"></a></p><a href="./posts/016_Claude 3 Riddles/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/016_Claude 3 Riddles/index_files/figure-html/eb86ab1b-f92d-4bdd-b242-01e0b2139f4e-1-3de4e8a8-77bc-4d93-a9e0-e15106dc3d7e.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/016_Claude 3 Riddles/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/016_Claude 3 Riddles/index.html" class="no-external">Claude 3 Opus Riddles</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/016_Claude 3 Riddles/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Claude 3 Opus'); return false;">
+Claude 3 Opus
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/016_Claude 3 Riddles/index.html" class="no-external">How well does Claude 3 Opus solve riddles</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/016_Claude 3 Riddles/index.html" class="no-external">
+<div class="listing-date">
+Apr 2, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Sports Analytics,LLava,Data Analysis" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1717440678756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
+<div class="thumbnail">
+<p><a href="./posts/006_NBA Data/index.html" class="no-external"></a></p><a href="./posts/006_NBA Data/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/006_NBA Data/76ers.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/006_NBA Data/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/006_NBA Data/index.html" class="no-external">Data Insights Using LLava</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/006_NBA Data/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('LLava'); return false;">
+LLava
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/006_NBA Data/index.html" class="no-external">How does LLava handle unlabeled data?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/006_NBA Data/index.html" class="no-external">
+<div class="listing-date">
+Feb 22, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Sports Analytics,ChatGPT,VEED.IO" data-listing-date-sort="1711411200000" data-listing-file-modified-sort="1717440678780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921">
+<div class="thumbnail">
+<p><a href="./posts/014_ESPN Analyst/index.html" class="no-external"></a></p><a href="./posts/014_ESPN Analyst/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/014_ESPN Analyst/aiespn.webp"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/014_ESPN Analyst/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/014_ESPN Analyst/index.html" class="no-external">ESPN GPT</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/014_ESPN Analyst/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VEED.IO'); return false;">
+VEED.IO
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/014_ESPN Analyst/index.html" class="no-external">How does ChatGPT4 show its sports knowledge</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/014_ESPN Analyst/index.html" class="no-external">
+<div class="listing-date">
+Mar 26, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Music,Suno AI,Gemini" data-listing-date-sort="1708992000000" data-listing-file-modified-sort="1717440678760" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
+<div class="thumbnail">
+<p><a href="./posts/007_Exploring AI Music/index.html" class="no-external"></a></p><a href="./posts/007_Exploring AI Music/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/007_Exploring AI Music/ghost.jpeg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/007_Exploring AI Music/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/007_Exploring AI Music/index.html" class="no-external">Exploring AI-Generated Music</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/007_Exploring AI Music/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Music'); return false;">
+Music
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Suno AI'); return false;">
+Suno AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;">
+Gemini
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/007_Exploring AI Music/index.html" class="no-external">Exploring various tools and history of AI-generated Music</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/007_Exploring AI Music/index.html" class="no-external">
+<div class="listing-date">
+Feb 27, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="Retrieval Augmented Generation,Langchain,Sports Analytics" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1717440678740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
+<div class="thumbnail">
+<p><a href="./posts/005_Hackathon/index.html" class="no-external"></a></p><a href="./posts/005_Hackathon/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/005_Hackathon/Player.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/005_Hackathon/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/005_Hackathon/index.html" class="no-external">Exploring Generative AI</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/005_Hackathon/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Retrieval Augmented Generation'); return false;">
+Retrieval Augmented Generation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Langchain'); return false;">
+Langchain
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/005_Hackathon/index.html" class="no-external">My experience at a hackathon</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/005_Hackathon/index.html" class="no-external">
+<div class="listing-date">
+Feb 20, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="Reasoning,Llava,Data Analysis" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1717440678736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
+<div class="thumbnail">
+<p><a href="./posts/004_Images + Text/index.html" class="no-external"></a></p><a href="./posts/004_Images + Text/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/004_Images + Text/riddle.jpeg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/004_Images + Text/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/004_Images + Text/index.html" class="no-external">Exploring Large Vision-Language Models</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/004_Images + Text/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llava'); return false;">
+Llava
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/004_Images + Text/index.html" class="no-external">Can AI comment on patterns and count?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/004_Images + Text/index.html" class="no-external">
+<div class="listing-date">
+Feb 15, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="Retrieval Augmented Generation,Content Creation,Generative AI" data-listing-date-sort="1709164800000" data-listing-file-modified-sort="1717440678764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="thumbnail">
+<p><a href="./posts/008_RAG/index.html" class="no-external"></a></p><a href="./posts/008_RAG/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/008_RAG/RAG.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/008_RAG/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/008_RAG/index.html" class="no-external">Exploring Retrieval Augmented Generation</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/008_RAG/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Retrieval Augmented Generation'); return false;">
+Retrieval Augmented Generation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;">
+Content Creation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Generative AI'); return false;">
+Generative AI
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/008_RAG/index.html" class="no-external">What is it and how can it be used?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/008_RAG/index.html" class="no-external">
+<div class="listing-date">
+Feb 29, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="Football,Pegasus,Twelvelabs" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440678780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361">
+<div class="thumbnail">
+<p><a href="./posts/013_Football Analytics/index.html" class="no-external"></a></p><a href="./posts/013_Football Analytics/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/013_Football Analytics/index_files/figure-html/e1dc5e95-0935-47ec-bdee-f1ae3a14afd6-1-0301b7d9-b100-475a-9280-a5cc99e870e6.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/013_Football Analytics/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/013_Football Analytics/index.html" class="no-external">Foodball Analytics + LLMs</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/013_Football Analytics/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Football'); return false;">
+Football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pegasus'); return false;">
+Pegasus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Twelvelabs'); return false;">
+Twelvelabs
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/013_Football Analytics/index.html" class="no-external">Exploring RAG</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/013_Football Analytics/index.html" class="no-external">
+<div class="listing-date">
+Mar 19, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="10" data-categories="Sports Analytics,Mixtral Instruct,Gemini" data-listing-date-sort="1711584000000" data-listing-file-modified-sort="1717440678800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2179">
+<div class="thumbnail">
+<p><a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external"></a></p><a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/015_Sports Analytics +LLMs/index_files/figure-html/daaa074d-4243-435a-aa6b-174b47b1a7e2-1-710b22af-b440-45be-b214-6fcac9f4f450.png" alt="image.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external">LLMs and Basketball Analytics</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Mixtral Instruct'); return false;">
+Mixtral Instruct
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;">
+Gemini
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external">Can LLMs understand sports analytics?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/015_Sports Analytics +LLMs/index.html" class="no-external">
+<div class="listing-date">
+Mar 28, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="11" data-categories="Basketball,Pegasus,Twelve Labs" data-listing-date-sort="1710979200000" data-listing-file-modified-sort="1717440678776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
+<div class="thumbnail">
+<p><a href="./posts/012_AI and Videos/index.html" class="no-external"></a></p><a href="./posts/012_AI and Videos/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/012_AI and Videos/index_files/figure-html/9fe68211-64a6-4d4b-b4a4-a56dd75cd0e5-2-cff928b7-3488-493a-9549-c63ce7f32e09.png" alt="image.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/012_AI and Videos/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/012_AI and Videos/index.html" class="no-external">LLMs and Basketball Highlight Analysis</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/012_AI and Videos/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Basketball'); return false;">
+Basketball
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pegasus'); return false;">
+Pegasus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Twelve Labs'); return false;">
+Twelve Labs
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/012_AI and Videos/index.html" class="no-external">Exploring Pegasus – Can it analyze basketball highlights?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/012_AI and Videos/index.html" class="no-external">
+<div class="listing-date">
+Mar 21, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="12" data-categories="Product Design,ChatGPT,DALL-E" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1717440678620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
+<div class="thumbnail">
+<p><a href="./posts/001_product/index.html" class="no-external"></a></p><a href="./posts/001_product/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/001_product/index_files/figure-html/e4236ac7-b50e-437d-9007-640656e3d225-1-86920b3b-2c76-45c7-83b3-1aa47e6dda10.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/001_product/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/001_product/index.html" class="no-external">Making Products with ChatGPT 4.0</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/001_product/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Product Design'); return false;">
+Product Design
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;">
+DALL-E
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/001_product/index.html" class="no-external">How does ChatGPT create product names and ideas?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/001_product/index.html" class="no-external">
+<div class="listing-date">
+Feb 6, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="13" data-listing-file-modified-sort="1717440678588" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="thumbnail">
+<p><a href="./blog.html" class="no-external"></a></p><a href="./blog.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./blog.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog.html" class="no-external">My Exploration of LLMs</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./blog.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./blog.html" class="no-external">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+   …<option value="listing-author" data-direction="asc"></option></select></div></div><div class="list quarto-listing-default"><div class="quarto-post image-right" data-index="0" data-categories="Content Creation,SUNO AI,VEED.IO" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/018_Children's Song AI/index_files/figure-html/f21d4602-f514-44e3-aba3-d7bb8ac3df2e-1-e5e73134-80f2-45ae-8925-f217d9c1e7ca.png" alt="image.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('SUNO AI'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('VEED.IO'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="1" data-categories="Reasoning,Claude 3 Opus" data-listing-date-sort="1712016000000" data-listing-file-modified-sort="1717440678804" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/016_Claude 3 Riddles/index_files/figure-html/eb86ab1b-f92d-4bdd-b242-01e0b2139f4e-1-3de4e8a8-77bc-4d93-a9e0-e15106dc3d7e.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Claude 3 Opus'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="2" data-categories="Sports Analytics,Mixtral Instruct,Gemini" data-listing-date-sort="1711584000000" data-listing-file-modified-sort="1717440678800" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2179"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/015_Sports Analytics +LLMs/index_files/figure-html/daaa074d-4243-435a-aa6b-174b47b1a7e2-1-710b22af-b440-45be-b214-6fcac9f4f450.png" alt="image.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Mixtral Instruct'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="3" data-categories="Sports Analytics,ChatGPT,VEED.IO" data-listing-date-sort="1711411200000" data-listing-file-modified-sort="1717440678780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/014_ESPN Analyst/aiespn.webp"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('VEED.IO'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="4" data-categories="Basketball,Pegasus,Twelve Labs" data-listing-date-sort="1710979200000" data-listing-file-modified-sort="1717440678776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/012_AI and Videos/index_files/figure-html/9fe68211-64a6-4d4b-b4a4-a56dd75cd0e5-2-cff928b7-3488-493a-9549-c63ce7f32e09.png" alt="image.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Basketball'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Pegasus'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Twelve Labs'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="5" data-categories="Football,Pegasus,Twelvelabs" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440678780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/013_Football Analytics/index_files/figure-html/e1dc5e95-0935-47ec-bdee-f1ae3a14afd6-1-0301b7d9-b100-475a-9280-a5cc99e870e6.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Football'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Pegasus'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Twelvelabs'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="6" data-categories="Gemini,Data Analysis,Communication" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440678772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/011_Technical Interview/index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-2-1f6d28fa-1dd3-4f46-b88e-c9bedfa25d59.png" alt="image.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Communication'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="7" data-categories="Claude 3 Opus,Huru AI,Communication" data-listing-date-sort="1710374400000" data-listing-file-modified-sort="1717440678764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2067"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/010_LLM Interview/interview.webp"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Claude 3 Opus'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Huru AI'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Communication'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="8" data-categories="Retrieval Augmented Generation,Content Creation,Generative AI" data-listing-date-sort="1709164800000" data-listing-file-modified-sort="1717440678764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/008_RAG/RAG.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Retrieval Augmented Generation'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Generative AI'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="9" data-categories="Music,Suno AI,Gemini" data-listing-date-sort="1708992000000" data-listing-file-modified-sort="1717440678760" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/007_Exploring AI Music/ghost.jpeg"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Music'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Suno AI'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="10" data-categories="Sports Analytics,LLava,Data Analysis" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1717440678756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/006_NBA Data/76ers.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('LLava'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="11" data-categories="Retrieval Augmented Generation,Langchain,Sports Analytics" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1717440678740" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/005_Hackathon/Player.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Retrieval Augmented Generation'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Langchain'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="12" data-categories="Reasoning,Llava,Data Analysis" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1717440678736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/004_Images + Text/riddle.jpeg"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Llava'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="13" data-categories="Content Creation,ChatGPT,DALL-E" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1717440678736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/003_Book/1.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="14" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/002_testing_logic/matches.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div><div class="quarto-post image-right" data-index="15" data-categories="Product Design,ChatGPT,DALL-E" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1717440678620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674"><div class="thumbnail"><p></p><p class="card-img-top"><img src="posts/001_product/index_files/figure-html/e4236ac7-b50e-437d-9007-640656e3d225-1-86920b3b-2c76-45c7-83b3-1aa47e6dda10.png"  class="thumbnail-image card-img"/></p><p></p></div><div class="body"><div class="listing-subtitle"></div><div class="listing-categories"><div class="listing-category" onclick="window.quartoListingCategory('Product Design'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;"></div><div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;"></div></div><div class="listing-description"></div></div><div class="metadata"><div class="listing-date"></div><div class="listing-author"></div></div></div></div><div class="listing-no-matching d-none"></div></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./blog.html" class="no-external"></a></p><a href="./blog.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="14" data-categories="Gemini,Data Analysis,Communication" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440678772" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<div class="thumbnail">
+<p><a href="./posts/011_Technical Interview/index.html" class="no-external"></a></p><a href="./posts/011_Technical Interview/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/011_Technical Interview/index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-2-1f6d28fa-1dd3-4f46-b88e-c9bedfa25d59.png" alt="image.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/011_Technical Interview/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/011_Technical Interview/index.html" class="no-external">Passing the Google Data Analytics Interview</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/011_Technical Interview/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;">
+Gemini
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Communication'); return false;">
+Communication
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/011_Technical Interview/index.html" class="no-external">Will AI pass the data analytics technical interview?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/011_Technical Interview/index.html" class="no-external">
+<div class="listing-date">
+Mar 19, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="15" data-listing-file-modified-sort="1717440678596" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
+<div class="thumbnail">
+<p><a href="./new.html" class="no-external"></a></p><a href="./new.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./new.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./new.html" class="no-external">Projects &amp; Blog Posts</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./new.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./new.html" class="no-external">listing: contents: projects sort: date desc type: grid sort-ui: false filter-ui: false</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./new.html" class="no-external"></a></p><a href="./new.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="16" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678620" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="thumbnail">
+<p><a href="./posts/002_testing_logic/index.html" class="no-external"></a></p><a href="./posts/002_testing_logic/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/002_testing_logic/matches.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/002_testing_logic/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/002_testing_logic/index.html" class="no-external">Testing Logical Reasoning</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/002_testing_logic/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/002_testing_logic/index.html" class="no-external">Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/002_testing_logic/index.html" class="no-external">
+<div class="listing-date">
+Feb 8, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="17" data-categories="projects,Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="thumbnail">
+<p><a href="./projects/001_project1/index.html" class="no-external"></a></p><a href="./projects/001_project1/index.html" class="no-external">
+<p class="card-img-top"><img src="projects/001_project1/matches.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./projects/001_project1/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/001_project1/index.html" class="no-external">Testing Logical Reasoning</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projects/001_project1/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('projects'); return false;">
+projects
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="listing-description">
+<a href="./projects/001_project1/index.html" class="no-external">Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./projects/001_project1/index.html" class="no-external">
+<div class="listing-date">
+Feb 8, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="18" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678828" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="thumbnail">
+<p><a href="./projects/002_project2/index.html" class="no-external"></a></p><a href="./projects/002_project2/index.html" class="no-external">
+<p class="card-img-top"><img src="projects/002_project2/matches.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./projects/002_project2/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/002_project2/index.html" class="no-external">Testing Logical Reasoning</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projects/002_project2/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="listing-description">
+<a href="./projects/002_project2/index.html" class="no-external">Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./projects/002_project2/index.html" class="no-external">
+<div class="listing-date">
+Feb 8, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="19" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440678832" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="thumbnail">
+<p><a href="./projects/003_project3/index.html" class="no-external"></a></p><a href="./projects/003_project3/index.html" class="no-external">
+<p class="card-img-top"><img src="projects/003_project3/matches.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./projects/003_project3/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/003_project3/index.html" class="no-external">Testing Logical Reasoning</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projects/003_project3/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
+<div class="listing-description">
+<a href="./projects/003_project3/index.html" class="no-external">Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./projects/003_project3/index.html" class="no-external">
+<div class="listing-date">
+Feb 8, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="20" data-categories="Claude 3 Opus,Huru AI,Communication" data-listing-date-sort="1710374400000" data-listing-file-modified-sort="1717440678764" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2067">
+<div class="thumbnail">
+<p><a href="./posts/010_LLM Interview/index.html" class="no-external"></a></p><a href="./posts/010_LLM Interview/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/010_LLM Interview/interview.webp"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/010_LLM Interview/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/010_LLM Interview/index.html" class="no-external">The LLM Software Engineering Interview</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/010_LLM Interview/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Claude 3 Opus'); return false;">
+Claude 3 Opus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Huru AI'); return false;">
+Huru AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Communication'); return false;">
+Communication
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/010_LLM Interview/index.html" class="no-external">Can AI really take our jobs?</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/010_LLM Interview/index.html" class="no-external">
+<div class="listing-date">
+Mar 14, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="21" data-categories="Content Creation,ChatGPT,DALL-E" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1717440678736" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
+<div class="thumbnail">
+<p><a href="./posts/003_Book/index.html" class="no-external"></a></p><a href="./posts/003_Book/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/003_Book/1.png"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/003_Book/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/003_Book/index.html" class="no-external">Using ChatGPT to Create Stories</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/003_Book/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;">
+Content Creation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;">
+DALL-E
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/003_Book/index.html" class="no-external">Producing a book that explains AI and LLMs to children.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/003_Book/index.html" class="no-external">
+<div class="listing-date">
+Feb 13, 2024
+</div>
+<div class="listing-author">
+Jason Saito
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="22" data-listing-file-modified-sort="1717440678588">
+<div class="thumbnail">
+<p><a href="./interests.html" class="no-external"></a></p><a href="./interests.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./interests.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./interests.html" class="no-external"></a>
+</h3>
+<div class="listing-subtitle">
+<a href="./interests.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="./interests.html" class="no-external"></a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="./interests.html" class="no-external"></a></p><a href="./interests.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
