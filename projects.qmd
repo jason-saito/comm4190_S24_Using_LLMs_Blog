@@ -6,7 +6,6 @@ listing:
     - posts 
   sort: date desc
   type: grid
-  categories: true
   sort-ui: false
   filter-ui: false
 page-layout: full
@@ -18,11 +17,32 @@ title-block-banner: true
 Explore my recent projects and blog posts:
 
 ### Projects
+{% for item in listing.items %}
+{% if item.category == "projects" %}
+::: {.project-card}
+---
+title: "{{ item.title }}"
+author: "{{ item.author }}"
+date: "{{ item.date }}"
+image: "{{ item.image }}"
+description: "{{ item.description }}"
+---
+:::
+{% endif %}
+{% endfor %}
 
-::: {.project-list filter="projects"}
-::: 
 
 ### Blog Posts
-
-::: {.posts-list filter="posts"}
-::: 
+{% for item in listing.items %}
+{% if item.category == "posts" %}
+::: {.project-card}
+---
+title: "{{ item.title }}"
+author: "{{ item.author }}"
+date: "{{ item.date }}"
+image: "{{ item.image }}"
+description: "{{ item.description }}"
+---
+:::
+{% endif %}
+{% endfor %}
