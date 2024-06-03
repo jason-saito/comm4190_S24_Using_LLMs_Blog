@@ -6,13 +6,13 @@ website:
   navbar:
     right:
       - text: Projects
-          menu: 
-            - text: Project 1
-              href: project.qmd  
-            - text: Project 2
-              href: project.qmd
-            - text: Project 3
-              href: project.qmd
+      menu:
+        - text: Project 1
+        - href: projects.qmd
+        - text: Project 2
+        - href: projects.qmd
+        - text: Project 3
+        - href: projects.qmd
       - interests.qmd
       - blog.qmd
       - icon: github
