@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.554">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -106,9 +106,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -159,7 +159,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -229,7 +229,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="Basketball">Basketball <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ChatGPT">ChatGPT <span class="quarto-category-count">(7)</span></div><div class="category" data-category="Claude 3 Opus">Claude 3 Opus <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Communication">Communication <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Content Creation">Content Creation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="DALL-E">DALL-E <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Data Analysis">Data Analysis <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Football">Football <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Gemini">Gemini <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Generative AI">Generative AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Huru AI">Huru AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="LLava">LLava <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Langchain">Langchain <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Llama 2">Llama 2 <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Llava">Llava <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Mixtral Instruct">Mixtral Instruct <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Music">Music <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Pegasus">Pegasus <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Product Design">Product Design <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Reasoning">Reasoning <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Retrieval Augmented Generation">Retrieval Augmented Generation <span class="quarto-category-count">(2)</span></div><div class="category" data-category="SUNO AI">SUNO AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sports Analytics">Sports Analytics <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Suno AI">Suno AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Twelve Labs">Twelve Labs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Twelvelabs">Twelvelabs <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VEED.IO">VEED.IO <span class="quarto-category-count">(2)</span></div><div class="category" data-category="projects">projects <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -256,7 +258,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="lab-reports">Lab Reports</h2>
 <div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="projects,Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717380169341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="0" data-categories="projects,Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./projects/001_project1/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/001_project1/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -264,6 +266,20 @@ window.Quarto = {
 <h5 class="no-anchor card-title listing-title">
 Testing Logical Reasoning
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('projects'); return false;">
+projects
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
 <div class="card-text listing-description">
 Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
 </div>
@@ -279,7 +295,7 @@ Feb 8, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717380169345" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="1" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./projects/002_project2/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/002_project2/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -287,6 +303,17 @@ Feb 8, 2024
 <h5 class="no-anchor card-title listing-title">
 Testing Logical Reasoning
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
 <div class="card-text listing-description">
 Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
 </div>
@@ -302,7 +329,7 @@ Feb 8, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717380169345" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="2" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./projects/003_project3/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="projects/003_project3/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -310,6 +337,17 @@ Feb 8, 2024
 <h5 class="no-anchor card-title listing-title">
 Testing Logical Reasoning
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
 <div class="card-text listing-description">
 Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
 </div>
@@ -335,7 +373,7 @@ No matching items
 <h2 class="anchored" data-anchor-id="meeting-notes">Meeting Notes</h2>
 <div id="listing-blogs" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Content Creation,SUNO AI,VEED.IO" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1717380169341" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366">
+<div class="g-col-1" data-index="0" data-categories="Content Creation,SUNO AI,VEED.IO" data-listing-date-sort="1714262400000" data-listing-file-modified-sort="1717440290437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="366">
 <a href="./posts/018_Children's Song AI/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/018_Children's Song AI/index_files/figure-html/f21d4602-f514-44e3-aba3-d7bb8ac3df2e-1-e5e73134-80f2-45ae-8925-f217d9c1e7ca.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -343,6 +381,17 @@ No matching items
 <h5 class="no-anchor card-title listing-title">
 Children’s Song with AI
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;">
+Content Creation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SUNO AI'); return false;">
+SUNO AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VEED.IO'); return false;">
+VEED.IO
+</div>
+</div>
 <div class="card-text listing-description">
 Can AI make a children’s song and music video?
 </div>
@@ -358,7 +407,7 @@ Apr 28, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Reasoning,Claude 3 Opus" data-listing-date-sort="1712016000000" data-listing-file-modified-sort="1717380169317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653">
+<div class="g-col-1" data-index="1" data-categories="Reasoning,Claude 3 Opus" data-listing-date-sort="1712016000000" data-listing-file-modified-sort="1717440290413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="653">
 <a href="./posts/016_Claude 3 Riddles/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/016_Claude 3 Riddles/index_files/figure-html/eb86ab1b-f92d-4bdd-b242-01e0b2139f4e-1-3de4e8a8-77bc-4d93-a9e0-e15106dc3d7e.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -366,6 +415,14 @@ Apr 28, 2024
 <h5 class="no-anchor card-title listing-title">
 Claude 3 Opus Riddles
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Claude 3 Opus'); return false;">
+Claude 3 Opus
+</div>
+</div>
 <div class="card-text listing-description">
 How well does Claude 3 Opus solve riddles
 </div>
@@ -381,7 +438,7 @@ Apr 2, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="Sports Analytics,LLava,Data Analysis" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1717380169269" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
+<div class="g-col-1" data-index="2" data-categories="Sports Analytics,LLava,Data Analysis" data-listing-date-sort="1708560000000" data-listing-file-modified-sort="1717440290365" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1280">
 <a href="./posts/006_NBA Data/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/006_NBA Data/76ers.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -389,6 +446,17 @@ Apr 2, 2024
 <h5 class="no-anchor card-title listing-title">
 Data Insights Using LLava
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('LLava'); return false;">
+LLava
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+</div>
 <div class="card-text listing-description">
 How does LLava handle unlabeled data?
 </div>
@@ -404,7 +472,7 @@ Feb 22, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Sports Analytics,ChatGPT,VEED.IO" data-listing-date-sort="1711411200000" data-listing-file-modified-sort="1717380169293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921">
+<div class="g-col-1" data-index="3" data-categories="Sports Analytics,ChatGPT,VEED.IO" data-listing-date-sort="1711411200000" data-listing-file-modified-sort="1717440290389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="921">
 <a href="./posts/014_ESPN Analyst/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/014_ESPN Analyst/aiespn.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -412,6 +480,17 @@ Feb 22, 2024
 <h5 class="no-anchor card-title listing-title">
 ESPN GPT
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('VEED.IO'); return false;">
+VEED.IO
+</div>
+</div>
 <div class="card-text listing-description">
 How does ChatGPT4 show its sports knowledge
 </div>
@@ -427,7 +506,7 @@ Mar 26, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="Music,Suno AI,Gemini" data-listing-date-sort="1708992000000" data-listing-file-modified-sort="1717380169277" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
+<div class="g-col-1" data-index="4" data-categories="Music,Suno AI,Gemini" data-listing-date-sort="1708992000000" data-listing-file-modified-sort="1717440290373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="462">
 <a href="./posts/007_Exploring AI Music/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/007_Exploring AI Music/ghost.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -435,6 +514,17 @@ Mar 26, 2024
 <h5 class="no-anchor card-title listing-title">
 Exploring AI-Generated Music
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Music'); return false;">
+Music
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Suno AI'); return false;">
+Suno AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;">
+Gemini
+</div>
+</div>
 <div class="card-text listing-description">
 Exploring various tools and history of AI-generated Music
 </div>
@@ -450,7 +540,7 @@ Feb 27, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="Retrieval Augmented Generation,Langchain,Sports Analytics" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1717380169257" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
+<div class="g-col-1" data-index="5" data-categories="Retrieval Augmented Generation,Langchain,Sports Analytics" data-listing-date-sort="1708387200000" data-listing-file-modified-sort="1717440290353" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="481">
 <a href="./posts/005_Hackathon/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/005_Hackathon/Player.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -458,6 +548,17 @@ Feb 27, 2024
 <h5 class="no-anchor card-title listing-title">
 Exploring Generative AI
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Retrieval Augmented Generation'); return false;">
+Retrieval Augmented Generation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Langchain'); return false;">
+Langchain
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+</div>
 <div class="card-text listing-description">
 My experience at a hackathon
 </div>
@@ -473,7 +574,7 @@ Feb 20, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Reasoning,Llava,Data Analysis" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1717380169253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
+<div class="g-col-1" data-index="6" data-categories="Reasoning,Llava,Data Analysis" data-listing-date-sort="1707955200000" data-listing-file-modified-sort="1717440290349" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="618">
 <a href="./posts/004_Images + Text/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/004_Images + Text/riddle.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -481,6 +582,17 @@ Feb 20, 2024
 <h5 class="no-anchor card-title listing-title">
 Exploring Large Vision-Language Models
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llava'); return false;">
+Llava
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+</div>
 <div class="card-text listing-description">
 Can AI comment on patterns and count?
 </div>
@@ -496,7 +608,7 @@ Feb 15, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Retrieval Augmented Generation,Content Creation,Generative AI" data-listing-date-sort="1709164800000" data-listing-file-modified-sort="1717380169277" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="g-col-1" data-index="7" data-categories="Retrieval Augmented Generation,Content Creation,Generative AI" data-listing-date-sort="1709164800000" data-listing-file-modified-sort="1717440290373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
 <a href="./posts/008_RAG/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/008_RAG/RAG.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -504,6 +616,17 @@ Feb 15, 2024
 <h5 class="no-anchor card-title listing-title">
 Exploring Retrieval Augmented Generation
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Retrieval Augmented Generation'); return false;">
+Retrieval Augmented Generation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;">
+Content Creation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Generative AI'); return false;">
+Generative AI
+</div>
+</div>
 <div class="card-text listing-description">
 What is it and how can it be used?
 </div>
@@ -519,7 +642,7 @@ Feb 29, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="Football,Pegasus,Twelvelabs" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717380169293" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361">
+<div class="g-col-1" data-index="8" data-categories="Football,Pegasus,Twelvelabs" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440290389" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="361">
 <a href="./posts/013_Football Analytics/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/013_Football Analytics/index_files/figure-html/e1dc5e95-0935-47ec-bdee-f1ae3a14afd6-1-0301b7d9-b100-475a-9280-a5cc99e870e6.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -527,6 +650,17 @@ Feb 29, 2024
 <h5 class="no-anchor card-title listing-title">
 Foodball Analytics + LLMs
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Football'); return false;">
+Football
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pegasus'); return false;">
+Pegasus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Twelvelabs'); return false;">
+Twelvelabs
+</div>
+</div>
 <div class="card-text listing-description">
 Exploring RAG
 </div>
@@ -542,7 +676,7 @@ Mar 19, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="Sports Analytics,Mixtral Instruct,Gemini" data-listing-date-sort="1711584000000" data-listing-file-modified-sort="1717380169317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2179">
+<div class="g-col-1" data-index="9" data-categories="Sports Analytics,Mixtral Instruct,Gemini" data-listing-date-sort="1711584000000" data-listing-file-modified-sort="1717440290413" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2179">
 <a href="./posts/015_Sports Analytics +LLMs/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/015_Sports Analytics +LLMs/index_files/figure-html/daaa074d-4243-435a-aa6b-174b47b1a7e2-1-710b22af-b440-45be-b214-6fcac9f4f450.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -550,6 +684,17 @@ Mar 19, 2024
 <h5 class="no-anchor card-title listing-title">
 LLMs and Basketball Analytics
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Sports Analytics'); return false;">
+Sports Analytics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Mixtral Instruct'); return false;">
+Mixtral Instruct
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;">
+Gemini
+</div>
+</div>
 <div class="card-text listing-description">
 Can LLMs understand sports analytics?
 </div>
@@ -565,7 +710,7 @@ Mar 28, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="Basketball,Pegasus,Twelve Labs" data-listing-date-sort="1710979200000" data-listing-file-modified-sort="1717380169289" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
+<div class="g-col-1" data-index="10" data-categories="Basketball,Pegasus,Twelve Labs" data-listing-date-sort="1710979200000" data-listing-file-modified-sort="1717440290385" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1236">
 <a href="./posts/012_AI and Videos/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/012_AI and Videos/index_files/figure-html/9fe68211-64a6-4d4b-b4a4-a56dd75cd0e5-2-cff928b7-3488-493a-9549-c63ce7f32e09.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -573,6 +718,17 @@ Mar 28, 2024
 <h5 class="no-anchor card-title listing-title">
 LLMs and Basketball Highlight Analysis
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Basketball'); return false;">
+Basketball
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Pegasus'); return false;">
+Pegasus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Twelve Labs'); return false;">
+Twelve Labs
+</div>
+</div>
 <div class="card-text listing-description">
 Exploring Pegasus – Can it analyze basketball highlights?
 </div>
@@ -588,7 +744,7 @@ Mar 21, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="Product Design,ChatGPT,DALL-E" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1717380169133" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
+<div class="g-col-1" data-index="11" data-categories="Product Design,ChatGPT,DALL-E" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1717440290229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="674">
 <a href="./posts/001_product/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/001_product/index_files/figure-html/e4236ac7-b50e-437d-9007-640656e3d225-1-86920b3b-2c76-45c7-83b3-1aa47e6dda10.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -596,6 +752,17 @@ Mar 21, 2024
 <h5 class="no-anchor card-title listing-title">
 Making Products with ChatGPT 4.0
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Product Design'); return false;">
+Product Design
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;">
+DALL-E
+</div>
+</div>
 <div class="card-text listing-description">
 How does ChatGPT create product names and ideas?
 </div>
@@ -611,7 +778,7 @@ Feb 6, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="Gemini,Data Analysis,Communication" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717380169285" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
+<div class="g-col-1" data-index="12" data-categories="Gemini,Data Analysis,Communication" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1717440290381" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="218">
 <a href="./posts/011_Technical Interview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/011_Technical Interview/index_files/figure-html/9745799c-13e5-4446-8915-0733a4c1087a-2-1f6d28fa-1dd3-4f46-b88e-c9bedfa25d59.png" alt="image.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -619,6 +786,17 @@ Feb 6, 2024
 <h5 class="no-anchor card-title listing-title">
 Passing the Google Data Analytics Interview
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Gemini'); return false;">
+Gemini
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Data Analysis'); return false;">
+Data Analysis
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Communication'); return false;">
+Communication
+</div>
+</div>
 <div class="card-text listing-description">
 Will AI pass the data analytics technical interview?
 </div>
@@ -634,7 +812,7 @@ Mar 19, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717380169133" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
+<div class="g-col-1" data-index="13" data-categories="Reasoning,ChatGPT,Llama 2" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1717440290229" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1855">
 <a href="./posts/002_testing_logic/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/002_testing_logic/matches.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -642,6 +820,17 @@ Mar 19, 2024
 <h5 class="no-anchor card-title listing-title">
 Testing Logical Reasoning
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Reasoning'); return false;">
+Reasoning
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Llama 2'); return false;">
+Llama 2
+</div>
+</div>
 <div class="card-text listing-description">
 Inspired by a video explaining LLMs and AI, I wanted to test ChatGPT’s limits when it comes to logical reasoning and problem solving.
 </div>
@@ -657,7 +846,7 @@ Feb 8, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="Claude 3 Opus,Huru AI,Communication" data-listing-date-sort="1710374400000" data-listing-file-modified-sort="1717380169277" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2067">
+<div class="g-col-1" data-index="14" data-categories="Claude 3 Opus,Huru AI,Communication" data-listing-date-sort="1710374400000" data-listing-file-modified-sort="1717440290373" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2067">
 <a href="./posts/010_LLM Interview/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/010_LLM Interview/interview.webp" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -665,6 +854,17 @@ Feb 8, 2024
 <h5 class="no-anchor card-title listing-title">
 The LLM Software Engineering Interview
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Claude 3 Opus'); return false;">
+Claude 3 Opus
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Huru AI'); return false;">
+Huru AI
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Communication'); return false;">
+Communication
+</div>
+</div>
 <div class="card-text listing-description">
 Can AI really take our jobs?
 </div>
@@ -680,7 +880,7 @@ Mar 14, 2024
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="Content Creation,ChatGPT,DALL-E" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1717380169253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
+<div class="g-col-1" data-index="15" data-categories="Content Creation,ChatGPT,DALL-E" data-listing-date-sort="1707782400000" data-listing-file-modified-sort="1717440290349" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="925">
 <a href="./posts/003_Book/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="posts/003_Book/1.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -688,6 +888,17 @@ Mar 14, 2024
 <h5 class="no-anchor card-title listing-title">
 Using ChatGPT to Create Stories
 </h5>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Content Creation'); return false;">
+Content Creation
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ChatGPT'); return false;">
+ChatGPT
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('DALL-E'); return false;">
+DALL-E
+</div>
+</div>
 <div class="card-text listing-description">
 Producing a book that explains AI and LLMs to children.
 </div>
