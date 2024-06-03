@@ -9,7 +9,6 @@ listing:
     contents: posts
     type: grid
     categories: true
-  - categories: true
 ---
 
 ## Lab Reports
