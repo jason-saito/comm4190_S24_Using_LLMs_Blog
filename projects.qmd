@@ -18,9 +18,9 @@ title-block-banner: true
 Explore my recent projects and blog posts:
 
 ### Projects
-::: {.project-list filter="posts"}
+::: {.posts-list filter="Basketball"}
 :::
 
 ### Blog Posts
-::: {.project-list filter="posts"}
+::: {.posts-list filter="ChatGPT"}
 :::
