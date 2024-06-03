@@ -5,20 +5,21 @@ website:
   title: "Jason Saito's Website"
   navbar:
     right:
-      - text: Projects
+      - projects.qmd
+      - text: Interests
         menu:
-          - text: Project 1
-            href: project.qmd  
+          - text: LLMs Blog
+            href: blog.qmd  
           - text: Project 2
-            href: project.qmd  
+            href: music.qmd  
           - text: Project 3
-            href: project.qmd
-      - interests.qmd
-      - blog.qmd
+            href: basketball.qmd
       - icon: github
         href: https://github.com/jason-saito
       - icon: linkedin
         href: https://www.linkedin.com/in/jason-saito/
+      - icon: gmail
+        href: mailto: jsaito@sas.upenn.edu
 format:
   html:
     theme: morph
