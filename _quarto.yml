@@ -5,6 +5,7 @@ website:
   title: "Jason Saito's Website"
   navbar:
     right:
+      - new.qmd
       - projects.qmd
       - text: Interests
         menu:

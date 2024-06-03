@@ -1,0 +1,14 @@
+---
+title: Projects & Blog Posts
+page-layout: full
+title-block-banner: true
+---
+
+# Projects
+```{r}
+listing:
+  contents: projects
+  sort: date desc
+  type: grid
+  sort-ui: false
+  filter-ui: false
