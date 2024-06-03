@@ -1,61 +1,20 @@
-listing:
-  contents: posts
-  sort: date desc
-  type: grid
-  sort-ui: false
-  filter-ui: false
+---
+title: Projects
+listing: 
+  - id: projects
+    contents: projects
+    type: grid
+  - id: blogs
+    contents: posts
+    type: grid
+---
 
+## Lab Reports
 
-### Explanation:
+:::{#projects}
+:::
 
-1. **YAML Front Matter**:
-   - `title`: Sets the title of the page.
-   - `page-layout`: Sets the page layout to full width.
-   - `title-block-banner`: Enables the title block banner.
+## Meeting Notes
 
-2. **Markdown Content**:
-   - **Projects Section**:
-     - `# Projects`: Adds a header for the Projects section.
-     - ```{r}``` block: Contains a `listing` directive to list the contents of the `projects` folder, sorted by date in descending order and displayed in a grid format without sort and filter UI.
-   
-   - **Posts Section**:
-     - `# Posts`: Adds a header for the Posts section.
-     - ```{r}``` block: Contains a `listing` directive to list the contents of the `posts` folder, sorted by date in descending order and displayed in a grid format without sort and filter UI.
-
-### How to Use:
-1. Save the above content into a file named `new.qmd`.
-2. Ensure the file is placed in the root or appropriate directory of your Quarto project.
-3. Update your `_quarto.yml` file to include a link to `new.qmd` in the navbar if needed.
-
-### Example Update to `_quarto.yml` (if required):
-```yaml
-project:
-  type: website
-
-website:
-  title: "Jason Saito's Website"
-  navbar:
-    right:
-      - text: Projects & Blog Posts
-        href: new.qmd
-      - text: Interests
-        menu:
-          - text: LLMs Blog
-            href: blog.qmd  
-          - text: Project 2
-            href: blog.qmd  
-          - text: Project 3
-            href: blog.qmd
-      - icon: github
-        href: https://github.com/jason-saito
-      - icon: linkedin
-        href: https://www.linkedin.com/in/jason-saito/
-      - icon: gmail
-        href: mailto:jsaito@sas.upenn.edu
-format:
-  html:
-    theme: morph
-    css: styles.css
-
-execute:
-  freeze: auto
+:::{#blogs}
+:::
