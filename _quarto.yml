@@ -8,11 +8,11 @@ website:
       - text: Projects
         menu:
           - text: Project 1
-            href: projects/project1.qmd  
+            href: project.qmd  
           - text: Project 2
-            href: projects/project2.qmd  
+            href: project.qmd  
           - text: Project 3
-            href: projects/project3.qmd  
+            href: project.qmd
       - interests.qmd
       - blog.qmd
       - icon: github
