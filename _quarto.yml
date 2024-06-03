@@ -5,14 +5,14 @@ website:
   title: "Jason Saito's Website"
   navbar:
     right:
-    - text: Projects
-      menu: 
-        - text: Project 1
-          href: project.qmd  
-        - text: Project 2
-          href: project.qmd
-        - text: Project 3
-          href: project.qmd
+      - text: Projects
+          menu: 
+            - text: Project 1
+              href: project.qmd  
+            - text: Project 2
+              href: project.qmd
+            - text: Project 3
+              href: project.qmd
       - interests.qmd
       - blog.qmd
       - icon: github
