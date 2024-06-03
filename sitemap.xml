@@ -2,94 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/projects/003_project3/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.765Z</lastmod>
+    <lastmod>2024-06-03T01:55:57.972Z</lastmod>
   </url>
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/projects/001_project1/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.765Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/003_Book/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.673Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/011_Technical Interview/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.709Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/012_AI and Videos/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/007_Exploring AI Music/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/013_Football Analytics/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.713Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/018_Children's Song AI/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.765Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/008_RAG/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/015_Sports Analytics +LLMs/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.737Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/interests.html</loc>
-    <lastmod>2024-06-03T01:39:46.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/blog.html</loc>
-    <lastmod>2024-06-03T01:39:46.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/016_Claude 3 Riddles/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.741Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/010_LLM Interview/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/006_NBA Data/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.693Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/014_ESPN Analyst/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.717Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/001_product/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/005_Hackathon/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.677Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/004_Images + Text/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.673Z</lastmod>
+    <lastmod>2024-06-03T01:55:57.972Z</lastmod>
   </url>
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/projects.html</loc>
-    <lastmod>2024-06-03T01:39:46.765Z</lastmod>
+    <lastmod>2024-06-03T01:55:57.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/004_Images + Text/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/005_Hackathon/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.884Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/001_product/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/014_ESPN Analyst/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.924Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/006_NBA Data/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.896Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/010_LLM Interview/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.908Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/016_Claude 3 Riddles/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.948Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/blog.html</loc>
+    <lastmod>2024-06-03T01:55:57.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/interests.html</loc>
+    <lastmod>2024-06-03T01:55:57.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/002_testing_logic/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.764Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/015_Sports Analytics +LLMs/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/008_RAG/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.904Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/018_Children's Song AI/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.972Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/013_Football Analytics/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.920Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/007_Exploring AI Music/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.904Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/012_AI and Videos/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.920Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/011_Technical Interview/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.916Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/posts/003_Book/index.html</loc>
+    <lastmod>2024-06-03T01:55:57.880Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/new.html</loc>
+    <lastmod>2024-06-03T01:55:57.740Z</lastmod>
   </url>
   <url>
     <loc>https://jason-saito.github.io/comm4190_S24_Using_LLMs_Blog/projects/002_project2/index.html</loc>
-    <lastmod>2024-06-03T01:39:46.765Z</lastmod>
+    <lastmod>2024-06-03T01:55:57.972Z</lastmod>
   </url>
 </urlset>
