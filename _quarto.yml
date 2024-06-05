@@ -5,16 +5,7 @@ website:
   title: "Jason Saito's Website"
   navbar:
     right:
-      - new.qmd
-      - projects.qmd
-      - text: Interests
-        menu:
-          - text: LLMs Blog
-            href: blog.qmd  
-          - text: Project 2
-            href: blog.qmd  
-          - text: Project 3
-            href: blog.qmd
+      - blog.qmd
       - icon: github
         href: https://github.com/jason-saito
       - icon: linkedin
